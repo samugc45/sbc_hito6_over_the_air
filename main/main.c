@@ -1,177 +1,80 @@
 #include <stdio.h>
 #include <string.h>
+#include "esp_err.h"
+#include "esp_log.h"
+#include "esp_spiffs.h"
+#include "nvs_flash.h"
+#include "esp_netif.h"
+#include "esp_event.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
-#include "esp_adc/adc_oneshot.h"
-#include "hal/adc_types.h"
 #include "driver/adc_types_legacy.h"
-
-#include "esp_log.h"
-#include "mqtt_client.h"
-
-#include <stdlib.h>
-#include "esp_wifi.h"
-#include "esp_pm.h"
-
-#include "driver/12c.h"
-include "bme680"
+#include "esp_adc/adc_oneshot.h"
+#include "driver/gpio.h"
+#include "hal/adc_types.h"
+#include "ssd1306.h"
 
 
-#define CONFIG_BROKER_URL "mqtt://eu.thingsboard.cloud"
-static const char *TAG = "RETO 4";
-esp_mqtt_client_handle_t client = NULL;
+#include "programa.h"
+#include "wifi_config.h"
+#include "ble_config.h"  
 
+static const char *TAG = "RETO4";
 
-
-static void mqtt_app_start(void);
-static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data);
-static void log_error_if_nonzero(const char *message, int error_code);
-static volatile int periodo_ms = 1000;
-
-
-
-
-void programa_main(void)
+void app_main(void)
 {
-
-
-        mqtt_app_start();
-            adc_oneshot_unit_handle_t adc1_handle;
-            adc_oneshot_unit_init_cfg_t init_config1 = {
-                .unit_id = ADC_UNIT_1,
-            };
-
-            adc_oneshot_new_unit(&init_config1, &adc1_handle);
-
-            adc_oneshot_chan_cfg_t config = {
-                .bitwidth = ADC_BITWIDTH_12,
-                .atten = ADC_ATTEN_DB_12,
-            };
-
-            adc_oneshot_config_channel(adc1_handle, ADC_CHANNEL_6, &config);
-
-
-        while(1){
-            char caja1[128];
-            char caja2[128];
-            char mensaje[64];
-            char mensaje2[64];
-
-
-            int valor_ldr = 0;
-            adc_oneshot_read(adc1_handle, ADC1_CHANNEL_6, &valor_ldr);
-
-            printf("Valor LDR: %d\n", valor_ldr);
-
-            int valor = (valor_ldr * 10) / 4096;
-
-            printf("LDR Bruto: %d | Digito: %d\n", valor_ldr, valor);
-
-            sprintf(caja1,"LDR Bruto: %d ", valor_ldr);
-            sprintf(caja2,"Digito: %d", valor);
-
-            sprintf(mensaje,"{\"ldr\": %d}", valor_ldr);
-            esp_mqtt_client_publish(client, "v1/devices/me/telemetry", mensaje, 0, 0, 0);
-
-
-            sprintf(mensaje2,"{\"Valor\": %d}", valor);
-            esp_mqtt_client_publish(client, "v1/devices/me/telemetry", mensaje2, 0, 0, 0);
-
-            vTaskDelay(pdMS_TO_TICKS(1000));
-        }
-}
-
-
-static void mqtt_app_start(void)
-{
-
-        esp_mqtt_client_config_t mqtt_cfg = {
-        .broker.address.uri = CONFIG_BROKER_URL,
-        .credentials.username = "wRC8LOmrLtf2tC86molT",
-        };
-         client = esp_mqtt_client_init(&mqtt_cfg);
-    esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
-    esp_mqtt_client_start(client);
-}
-
-
-
-static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
-{
-    ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%" PRIi32 "", base, event_id);
-    esp_mqtt_event_handle_t event = event_data;
-    esp_mqtt_client_handle_t client = event->client;
-    int msg_id;
-    switch ((esp_mqtt_event_id_t)event_id) {
-
-    case MQTT_EVENT_CONNECTED:
-    ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
-    esp_mqtt_client_subscribe(client, "v1/devices/me/rpc/request/+", 1);
-    break;
-
-    case MQTT_EVENT_DISCONNECTED:
-        ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");
-        break;
-
-    case MQTT_EVENT_SUBSCRIBED:
-        ESP_LOGI(TAG, "MQTT_EVENT_SUBSCRIBED, msg_id=%d", event->msg_id);
-        msg_id = esp_mqtt_client_publish(client, "/topic/qos0", "data", 0, 0, 0);
-        ESP_LOGI(TAG, "sent publish successful, msg_id=%d", msg_id);
-        break;
-    case MQTT_EVENT_UNSUBSCRIBED:
-        ESP_LOGI(TAG, "MQTT_EVENT_UNSUBSCRIBED, msg_id=%d", event->msg_id);
-        break;
-    case MQTT_EVENT_PUBLISHED:
-        ESP_LOGI(TAG, "MQTT_EVENT_PUBLISHED, msg_id=%d", event->msg_id);
-        break;
-
-   case MQTT_EVENT_DATA: {
-    char topic[96] = {0};
-    char data[96] = {0};
-    snprintf(topic, sizeof(topic), "%.*s", event->topic_len, event->topic);
-    snprintf(data, sizeof(data), "%.*s", event->data_len, event->data);
-    ESP_LOGI(TAG, "RPC %s -> %s", topic, data);
-
-    if (strstr(data, "setPeriodo") != NULL) {
-        char *p = strstr(data, "\"params\"");
-        if (p != NULL && (p = strchr(p, ':')) != NULL) {
-            int nuevo = atoi(p + 1);
-            if (nuevo < 200) nuevo = 200;
-            if (nuevo > 60000) nuevo = 60000;
-            periodo_ms = nuevo;
-        }
+     
+    esp_err_t ret = nvs_flash_init();
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        nvs_flash_init();
     }
-    const char *id = strrchr(topic, '/');
-    if (id != NULL) {
-        char resp_topic[128];
-        char resp[32];
-        snprintf(resp_topic, sizeof(resp_topic), "v1/devices/me/rpc/response/%s", id + 1);
-        snprintf(resp, sizeof(resp), "{\"periodo\": %d}", periodo_ms);
-        esp_mqtt_client_publish(client, resp_topic, resp, 0, 1, 0);
+    ESP_ERROR_CHECK(esp_netif_init());
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+
+ 
+    esp_vfs_spiffs_conf_t conf = {
+        .base_path = "/spiffs",
+        .partition_label = NULL,
+        .max_files = 5,
+        .format_if_mount_failed = true 
+    };
+    esp_vfs_spiffs_register(&conf);
+
+   
+
+    
+      FILE * f = fopen("/spiffs/config.txt", "r");
+
+    if (f == NULL) {
+        ESP_LOGW(TAG, "No hay config.txt. ");
+            f = fopen("/spiffs/config.txt", "w");
+    		fprintf(f,"SBC\nSBCwifi$\n,");
+    		fclose(f);
     }
-    break;
-}
+           f = fopen("/spiffs/config.txt", "r");
 
-    case MQTT_EVENT_ERROR:
-        ESP_LOGI(TAG, "MQTT_EVENT_ERROR");
-        if (event->error_handle->error_type == MQTT_ERROR_TYPE_TCP_TRANSPORT) {
-            log_error_if_nonzero("reported from esp-tls", event->error_handle->esp_tls_last_esp_err);
-            log_error_if_nonzero("reported from tls stack", event->error_handle->esp_tls_stack_err);
-            log_error_if_nonzero("captured as transport's socket errno",  event->error_handle->esp_transport_sock_errno);
-            ESP_LOGI(TAG, "Last errno string (%s)", strerror(event->error_handle->esp_transport_sock_errno));
+    	if (f!=NULL) {
+        char ssid[32] = {0};
+        char password[64] = {0};
 
+        if (fgets(ssid, sizeof(ssid), f) != NULL) ssid[strcspn(ssid, "\r\n")] = 0;
+        if (fgets(password, sizeof(password), f) != NULL) password[strcspn(password, "\r\n")] = 0;
+        fclose(f); 
+
+        ESP_LOGI(TAG, "Arrancando en modo Cliente para: %s", ssid);
+        
+        bool conectado = arrancar_wifi_sta(ssid, password); 
+
+        if (conectado) {
+            ESP_LOGI(TAG, "WiFi STA conectado con éxito. Arrancando Bluetooth...");
+            arrancar_bluetooth();
+            programa_main(); 
+
+        } else {
+            ESP_LOGW(TAG, "No se pudo conectar al WiFi guardado. Fallback a modo Access Point...");
+            arrancar_wifi_ap_web();
         }
-        break;
-    default:
-        ESP_LOGI(TAG, "Other event id:%d", event->event_id);
-        break;
-    }
-}
-
-static void log_error_if_nonzero(const char *message, int error_code)
-{
-    if (error_code != 0) {
-        ESP_LOGE(TAG, "Last error %s: 0x%x", message, error_code);
     }
 }
