@@ -24,12 +24,18 @@
 #include "esp_https_ota.h"
 #include "esp_ota_ops.h"
 
+#include "esp_sntp.h"
+#include <time.h>
+
 /* https://github.com/samugc45/sbc_hito6_over_the_air/raw/refs/heads/main/build/app-template.bin*/
 
 static const char *TAG = "RETO4";
 extern const char ca_cert_pem_start[] asm("_binary_ca_cert_pem_start");
 
 void ejecutar_actualizacion_ota(void);
+void iniciar_sntp(void);
+void tarea_ota_programada(void *pvParameters);
+
 
 void app_main(void)
 {
@@ -79,6 +85,7 @@ void app_main(void)
 
         if (conectado) {
             ESP_LOGI(TAG, "WiFi STA conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
+            iniciar_sntp();
             arrancar_bluetooth();
             ejecutar_actualizacion_ota();
             programa_main();
@@ -107,5 +114,40 @@ void ejecutar_actualizacion_ota() {
         esp_restart();
     } else {
         ESP_LOGE("OTA","FALLO ACTUALIZACION OTA");
+    }
+}
+
+
+void iniciar_sntp(void) {
+    ESP_LOGI(TAG, "Iniciando SNTP");
+    sntp_setoperatingmode(SNTP_OPMODE_POLL);
+    sntp_setservername(0, "pool.ntp.org");
+    sntp_init();
+
+    setenv("TZ", "CET-1CEST,M3.5.0,M10.5.0/3", 1);
+    tzset();
+}
+
+
+void tarea_ota_programada(void *pvParameters) {
+    time_t ahora;
+    struct tm info_tiempo;
+    bool ota_realizada_hoy = false;
+
+    while (1) {
+        time(&ahora);
+        localtime_r(&ahora, &info_tiempo);
+
+        if (info_tiempo.tm_hour < 12) {
+            ota_realizada_hoy = false;
+        }
+
+1        if (info_tiempo.tm_hour == 12 && !ota_realizada_hoy) {
+            ESP_LOGI("OTA", "¡Son las 12:00! Ejecutando actualización programada...");
+            ejecutar_actualizacion_ota();
+            ota_realizada_hoy = true;
+        }
+
+        vTaskDelay(pdMS_TO_TICKS(30000));
     }
 }

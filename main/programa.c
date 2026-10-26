@@ -20,7 +20,7 @@
 
 
 #define CONFIG_BROKER_URL "mqtt://eu.thingsboard.cloud"
-static const char *TAG = "RETO 4";
+static const char *TAG = "RETO 6";
 esp_mqtt_client_handle_t client = NULL;
 
 #define SDA GPIO_NUM_21
@@ -171,6 +171,10 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
             if (nuevo > 60000) nuevo = 60000;
             periodo_ms = nuevo;
         }
+    }
+    if (strstr(data, "updateFirmware") != NULL) {
+        ESP_LOGI(TAG, "¡Orden de actualización OTA recibida desde ThingsBoard!");
+        ejecutar_actualizacion_ota();
     }
     const char *id = strrchr(topic, '/');
     if (id != NULL) {
