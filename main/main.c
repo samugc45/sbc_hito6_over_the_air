@@ -63,7 +63,7 @@ void app_main(void)
    
 
     
-   /*   FILE * f = fopen("/spiffs/config.txt", "r");
+   FILE * f = fopen("/spiffs/config.txt", "r");
 
     if (f == NULL) {
         ESP_LOGW(TAG, "No hay config.txt. ");
@@ -72,16 +72,6 @@ void app_main(void)
     		fclose(f);
     }
            f = fopen("/spiffs/config.txt", "r");
-*/
-    // Escribe la red de tu casa SIEMPRE al arrancar
-    FILE * f = fopen("/spiffs/config.txt", "w");
-    if (f != NULL) {
-        fprintf(f, "Buku\nBrunocabello\n");
-        fclose(f);
-    }
-    
-    // Lee el archivo recién guardado
-    f = fopen("/spiffs/config.txt", "r");
     	if (f!=NULL) {
         char ssid[32] = {0};
         char password[64] = {0};
