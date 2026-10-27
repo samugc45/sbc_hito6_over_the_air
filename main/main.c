@@ -86,7 +86,7 @@ void app_main(void)
         bool conectado = arrancar_wifi_sta(ssid, password); 
 
         if (conectado) {
-            ESP_LOGI(TAG, "WiFi STA conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
+            ESP_LOGI(TAG, "WiFi v2 conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
             iniciar_sntp();
 
             vTaskDelay(pdMS_TO_TICKS(5000)); 

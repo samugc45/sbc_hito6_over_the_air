@@ -1,4 +1,4 @@
-/* * Data converted from C:/Espressif/frameworks/esp-idf-v5.3.1/RETOS/reto6/server_certs/ca_cert.pem
+/* * Data converted from C:/Users/BRUNO/Desktop/reto6/sbc_hito6_over_the_air/server_certs/ca_cert.pem
  * (null byte appended)
  */
 .data

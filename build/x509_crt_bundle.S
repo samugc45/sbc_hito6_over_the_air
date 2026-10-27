@@ -1,4 +1,4 @@
-/* * Data converted from C:/Espressif/frameworks/esp-idf-v5.3.1/RETOS/reto6/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/BRUNO/Desktop/reto6/sbc_hito6_over_the_air/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)
