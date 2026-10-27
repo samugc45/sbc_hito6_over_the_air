@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "app-template",
-    "project_version":    "v1.0.0-12-gccfa622-dirty",
+    "project_version":    "v1.0.0-13-g62495a5-dirty",
     "project_path":       "C:/Users/BRUNO/Desktop/reto6/sbc_hito6_over_the_air",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "C:/Users/BRUNO/Desktop/reto6/sbc_hito6_over_the_air/build",

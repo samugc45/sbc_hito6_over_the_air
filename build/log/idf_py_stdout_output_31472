@@ -1,0 +1,1154 @@
+t:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 27 2026 14:36:24[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (85) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00010000 00177000[0m
+[0;32mI (100) boot:  4 ota_1            OTA app          00 11 00190000 00177000[0m
+[0;32mI (107) boot:  5 spiffs           Unknown data     01 82 00307000 00064000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (119) boot: No factory image, trying OTA 0[0m
+[0;32mI (124) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=410f0h (266480) map[0m
+[0;32mI (224) esp_image: segment 1: paddr=00051118 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (224) esp_image: segment 2: paddr=00051124 vaddr=3ffbdb60 size=05dd8h ( 24024) load[0m
+[0;32mI (239) esp_image: segment 3: paddr=00056f04 vaddr=40080000 size=09114h ( 37140) load[0m
+[0;32mI (253) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=d8c4ch (887884) map[0m
+[0;32mI (558) esp_image: segment 5: paddr=00138c74 vaddr=40089114 size=15a50h ( 88656) load[0m
+[0;32mI (608) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (656) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (656) boot: Disabling RNG early entropy source...[0m
+[0;32mI (667) cpu_start: Multicore app[0m
+[0;32mI (676) cpu_start: Pro cpu start user code[0m
+[0;32mI (676) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (676) app_init: Application information:[0m
+[0;32mI (679) app_init: Project name:     app-template[0m
+[0;32mI (684) app_init: App version:      v1.0.0-12-gccfa622-dirty[0m
+[0;32mI (690) app_init: Compile time:     Oct 27 2026 14:36:05[0m
+[0;32mI (696) app_init: ELF file SHA256:  c52abcd01...[0m
+[0;32mI (702) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (707) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (712) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (717) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (722) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (729) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (735) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (741) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (747) heap_init: At 3FFCA550 len 00015AB0 (86 KiB): DRAM[0m
+[0;32mI (753) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (759) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (766) heap_init: At 4009EB64 len 0000149C (5 KiB): IRAM[0m
+[0;32mI (774) spi_flash: detected chip: generic[0m
+[0;32mI (777) spi_flash: flash io: dio[0m
+[0;32mI (781) coexist: coex firmware version: 4482466[0m
+[0;32mI (787) main_task: Started on CPU0[0m
+[0;32mI (797) main_task: Calling app_main()[0m
+[0;32mI (857) RETO4: Arrancando en modo Cliente para: Buku[0m
+[0;32mI (867) wifi:wifi driver task: 3ffd02f0, prio:23, stack:6656, core=0[0m
+[0;32mI (877) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (877) wifi:wifi certification version: v7.0[0m
+[0;32mI (877) wifi:config NVS flash: enabled[0m
+[0;32mI (877) wifi:config nano formating: disabled[0m
+[0;32mI (887) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (887) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (897) wifi:Init management short buffer num: 32[0m
+[0;32mI (897) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (897) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (907) wifi:Init static rx buffer num: 10[0m
+[0;32mI (907) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (917) wifi_init: rx ba win: 6[0m
+[0;32mI (917) wifi_init: accept mbox: 6[0m
+[0;32mI (917) wifi_init: tcpip mbox: 32[0m
+[0;32mI (927) wifi_init: udp mbox: 6[0m
+[0;32mI (927) wifi_init: tcp mbox: 6[0m
+[0;32mI (937) wifi_init: tcp tx win: 5760[0m
+[0;32mI (937) wifi_init: tcp rx win: 5760[0m
+[0;32mI (937) wifi_init: tcp mss: 1440[0m
+[0;32mI (947) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (947) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (957) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (1047) wifi:mode : sta (20:50:0d:01:11:40)[0m
+[0;32mI (1047) wifi:enable tsf[0m
+[0;32mI (1047) WIFI_CONFIG: wifi_init_sta terminado. Esperando conexión...[0m
+[0;32mI (3467) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (3467) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (5887) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (5887) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (8297) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (8297) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (10717) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (10717) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (13137) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (13137) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (15547) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (15547) WIFI_CONFIG: Fallo absoluto al conectar al SSID:Buku tras 5 intentos[0m
+[1;31mE (15557) wifi:NAN WiFi stop[0m
+[0;32mI (15557) wifi:flush txq[0m
+[0;32mI (15557) wifi:stop sw txq[0m
+[0;32mI (15557) wifi:lmac stop hw txq[0m
+[0;33mW (15557) RETO4: No se pudo conectar al WiFi guardado. Fallback a modo Access Point...[0m
+[0;32mI (15577) wifi:mode : softAP (20:50:0d:01:11:41)[0m
+[0;32mI (15587) wifi:Total power save buffer number: 16[0m
+[0;32mI (15587) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (15587) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (15587) WIFI_CONFIG: Modo AP Iniciado. SSID:esp1141 password:123456789[0m
+[0;32mI (15587) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (15607) main_task: Returned from app_main()[0m
+[0;32mI (35887) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (35887) wifi:station: b6:0c:8c:fd:dd:9d join, AID=1, bgn, 40U[0m
+[0;32mI (36337) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (37417) wifi:<ba-add>idx:2 (ifx:1, b6:0c:8c:fd:dd:9d), tid:0, ssn:16, winSize:64[0m
+[0;32mI (60497) wifi:station: b6:0c:8c:fd:dd:9d leave, AID = 1, reason = 4, bss_flags is 232563, bss:0x3ffbad08[0m
+[0;32mI (60497) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (60497) wifi:<ba-del>idx:2, tid:0[0m
+[1;31mE (60507) wifi:NAN WiFi stop[0m
+[0;32mI (60617) wifi:flush txq[0m
+[0;32mI (60617) wifi:stop sw txq[0m
+[0;32mI (60617) wifi:lmac stop hw txq[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 27 2026 14:36:24[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (85) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00010000 00177000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 00190000 00177000[0m
+[0;32mI (107) boot:  5 spiffs           Unknown data     01 82 00307000 00064000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (119) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=410f0h (266480) map[0m
+[0;32mI (219) esp_image: segment 1: paddr=00051118 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (219) esp_image: segment 2: paddr=00051124 vaddr=3ffbdb60 size=05dd8h ( 24024) load[0m
+[0;32mI (233) esp_image: segment 3: paddr=00056f04 vaddr=40080000 size=09114h ( 37140) load[0m
+[0;32mI (248) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=d8c4ch (887884) map[0m
+[0;32mI (553) esp_image: segment 5: paddr=00138c74 vaddr=40089114 size=15a50h ( 88656) load[0m
+[0;32mI (603) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (603) boot: Disabling RNG early entropy source...[0m
+[0;32mI (615) cpu_start: Multicore app[0m
+[0;32mI (624) cpu_start: Pro cpu start user code[0m
+[0;32mI (624) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (624) app_init: Application information:[0m
+[0;32mI (627) app_init: Project name:     app-template[0m
+[0;32mI (632) app_init: App version:      v1.0.0-12-gccfa622-dirty[0m
+[0;32mI (638) app_init: Compile time:     Oct 27 2026 14:36:05[0m
+[0;32mI (644) app_init: ELF file SHA256:  c52abcd01...[0m
+[0;32mI (649) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (655) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (660) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (664) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (670) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (677) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (683) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (689) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (695) heap_init: At 3FFCA550 len 00015AB0 (86 KiB): DRAM[0m
+[0;32mI (701) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (707) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (714) heap_init: At 4009EB64 len 0000149C (5 KiB): IRAM[0m
+[0;32mI (722) spi_flash: detected chip: generic[0m
+[0;32mI (724) spi_flash: flash io: dio[0m
+[0;32mI (729) coexist: coex firmware version: 4482466[0m
+[0;32mI (734) main_task: Started on CPU0[0m
+[0;32mI (744) main_task: Calling app_main()[0m
+[0;32mI (804) RETO4: Arrancando en modo Cliente para: Buku[0m
+[0;32mI (814) wifi:wifi driver task: 3ffd026c, prio:23, stack:6656, core=0[0m
+[0;32mI (824) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (824) wifi:wifi certification version: v7.0[0m
+[0;32mI (824) wifi:config NVS flash: enabled[0m
+[0;32mI (824) wifi:config nano formating: disabled[0m
+[0;32mI (834) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (834) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (844) wifi:Init management short buffer num: 32[0m
+[0;32mI (844) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (844) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (854) wifi:Init static rx buffer num: 10[0m
+[0;32mI (854) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (864) wifi_init: rx ba win: 6[0m
+[0;32mI (864) wifi_init: accept mbox: 6[0m
+[0;32mI (864) wifi_init: tcpip mbox: 32[0m
+[0;32mI (874) wifi_init: udp mbox: 6[0m
+[0;32mI (874) wifi_init: tcp mbox: 6[0m
+[0;32mI (884) wifi_init: tcp tx win: 5760[0m
+[0;32mI (884) wifi_init: tcp rx win: 5760[0m
+[0;32mI (884) wifi_init: tcp mss: 1440[0m
+[0;32mI (894) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (894) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (914) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (994) wifi:mode : sta (20:50:0d:01:11:40)[0m
+[0;32mI (994) wifi:enable tsf[0m
+[0;32mI (994) WIFI_CONFIG: wifi_init_sta terminado. Esperando conexión...[0m
+[0;32mI (1104) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1104) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1194) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1224) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1254) wifi:connected with Buku, aid = 2, channel 1, BW20, bssid = ee:f7:db:bc:c5:9c[0m
+[0;32mI (1254) wifi:security: WPA2-PSK, phy: bgn, rssi: -43[0m
+[0;32mI (1264) wifi:pm start, type: 1[0m
+
+[0;32mI (1264) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1304) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1304) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2274) esp_netif_handlers: sta ip: 10.86.146.207, mask: 255.255.255.0, gw: 10.86.146.33[0m
+[0;32mI (2274) WIFI_CONFIG: Conectado. IP obtenida: 10.86.146.207[0m
+[0;32mI (2274) WIFI_CONFIG: Conexión exitosa al SSID:Buku[0m
+[0;32mI (2284) RETO4: WiFi STA conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones[0m
+[0;32mI (2294) RETO4: Iniciando SNTP[0m
+[0;32mI (7294) BLE: Arrancando modulo Bluetooth...[0m
+[0;32mI (7294) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (7294) BTDM_INIT: Bluetooth MAC: 20:50:0d:01:11:42[0m
+[0;32mI (7544) RETO 6: Other event id:7[0m
+[0;31mE (7554) esp-tls: couldn't get hostname for :eu.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (7554) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (7564) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (7574) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (7594) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7604) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7614) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffe23d4).[0m
+[0;31mE (7564) mqtt_client: Error transport connect[0m
+[0;32mI (7614) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2834, Speed: 1000000 Hz).[0m
+[0;32mI (7634) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7624) RETO 6: MQTT_EVENT_ERROR[0m
+[0;32mI (7574) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (7654) BLE: Mi nombre Bluetooth sera: esp1140[0m
+[0;31mE (7644) RETO 6: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (7644) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7664) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (7664) RETO 6: Last errno string (Success)[0m
+[0;32mI (7684) NimBLE: disc_mode=2[0m
+[0;32mI (7684) RETO 6: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7684) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (7704) NimBLE: 
+[0m
+[0;31mE (8674) i2c.master: I2C software timeout[0m
+[0;31mE (8674) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (8674) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8684) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (8694) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (8694) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffe2834): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (8704) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (8714) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2834 after permanent error[0m
+[0;33mW (8764) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (8764) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2834, Speed: 1000000 Hz).[0m
+[0;32mI (8764) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8774) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9784) i2c.master: I2C software timeout[0m
+[0;31mE (9784) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (9784) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9794) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9804) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (9804) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffe2834): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9814) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9824) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2834 after permanent error[0m
+[0;33mW (9914) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (9914) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2834, Speed: 1000000 Hz).[0m
+[0;32mI (9914) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9924) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (10934) i2c.master: I2C software timeout[0m
+[0;31mE (10934) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (10934) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10944) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (10954) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (10954) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffe2834): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (10964) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (10974) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2834 after permanent error[0m
+[0;33mW (11144) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (11144) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2834, Speed: 1000000 Hz).[0m
+[0;32mI (11144) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11154) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (12164) i2c.master: I2C software timeout[0m
+[0;31mE (12164) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (12164) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (12174) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (12184) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (12184) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffe2834): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (12194) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (12204) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2834 after permanent error[0m
+[0;31mE (12214) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (12224) RETO 6: Fallo al inicializar el BME680, pero seguimos vivos![0m
+[0;32mI (12234) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2834, Speed: 1000000 Hz).[0m
+[0;32mI (12244) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (12254) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (13264) i2c.master: I2C software timeout[0m
+[0;31mE (13264) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (13264) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13274) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (13284) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (13284) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffe2834): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (13294) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (13304) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2834 after permanent error[0m
+[0;33mW (13354) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (13354) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2834, Speed: 1000000 Hz).[0m
+[0;32mI (13354) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13364) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13514) wifi:state: run -> init (0x3c0)[0m
+[0;32mI (13524) wifi:pm stop, total sleep time: 8854237 us / 12260291 us[0m
+
+[0;32mI (13524) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13534) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (13534) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (14374) i2c.master: I2C software timeout[0m
+[0;31mE (14374) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (14374) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14384) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (14394) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (14394) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffe2834): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (14404) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (14414) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2834 after permanent error[0m
+[0;33mW (14504) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (14504) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (14504) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14514) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (15524) i2c.master: I2C software timeout[0m
+[0;31mE (15524) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (15524) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15534) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (15544) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (15544) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (15554) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (15564) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;33mW (15734) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (15734) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (15734) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15744) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (16754) i2c.master: I2C software timeout[0m
+[0;31mE (16754) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (16754) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (16764) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (16774) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (16774) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (16784) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (16794) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;31mE (16804) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;32mI (16814) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (16824) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (16834) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17694) RETO 6: Other event id:7[0m
+[0;31mE (17844) i2c.master: I2C software timeout[0m
+[0;31mE (17844) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (17844) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17854) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (17864) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (17864) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (17874) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (17884) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;33mW (17934) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (17934) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (17934) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17944) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (18354) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (18364) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (18364) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (18954) i2c.master: I2C software timeout[0m
+[0;31mE (18954) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (18954) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (18964) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (18974) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (18974) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (18984) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (18994) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;33mW (19084) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (19084) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (19084) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (19094) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (20104) i2c.master: I2C software timeout[0m
+[0;31mE (20104) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (20104) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (20114) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (20124) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (20124) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (20134) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (20144) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;33mW (20314) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (20314) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (20314) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (20324) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (21334) i2c.master: I2C software timeout[0m
+[0;31mE (21334) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (21334) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (21344) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (21354) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (21354) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (21364) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (21374) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;31mE (21384) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;32mI (21394) wifi:Set ps type: 1, coexist: 1[0m
+
+[0;32mI (21404) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (21414) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (21424) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (22434) i2c.master: I2C software timeout[0m
+[0;31mE (22434) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (22434) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22444) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (22454) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (22454) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (22464) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (22474) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;33mW (22524) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (22524) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (22524) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22534) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23184) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (23194) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (23194) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (23544) i2c.master: I2C software timeout[0m
+[0;31mE (23544) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (23544) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23554) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (23564) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (23564) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (23574) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (23584) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;33mW (23674) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (23674) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (23674) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23684) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (24694) esp-tls: couldn't get hostname for :eu.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (24694) i2c.master: I2C software timeout[0m
+[0;31mE (24694) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (24694) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;31mE (24704) mqtt_client: Error transport connect[0m
+[0;32mI (24714) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24714) RETO 6: MQTT_EVENT_ERROR[0m
+[0;32mI (24724) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (24724) RETO 6: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (24734) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;32mI (24744) RETO 6: Last errno string (Success)[0m
+[0;33mW (24754) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;32mI (24754) RETO 6: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (24764) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (24774) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;33mW (24944) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (24944) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (24944) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24954) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (25964) i2c.master: I2C software timeout[0m
+[0;31mE (25964) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (25964) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (25974) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (25984) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (25984) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (25994) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (26004) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;31mE (26014) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (26024) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 1573
+LDR Bruto: 1573 | Digito: 3
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;33mW (26044) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (26054) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (27054) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a7c, Speed: 1000000 Hz).[0m
+[0;32mI (27054) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (27054) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (28014) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (28024) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (28024) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (28064) i2c.master: I2C software timeout[0m
+[0;31mE (28064) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (28064) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (28074) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (28084) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (28084) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffd6a7c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (28094) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (28104) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a7c after permanent error[0m
+[0;33mW (28154) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (28154) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a7c, Speed: 1000000 Hz).[0m
+[0;32mI (28154) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (28164) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (29174) i2c.master: I2C software timeout[0m
+[0;31mE (29174) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (29174) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (29184) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (29194) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (29194) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd6a7c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (29204) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (29214) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a7c after permanent error[0m
+[0;33mW (29304) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (29304) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a7c, Speed: 1000000 Hz).[0m
+[0;32mI (29304) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (29314) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (30324) i2c.master: I2C software timeout[0m
+[0;31mE (30324) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (30324) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (30334) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (30344) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (30344) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd6a7c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (30354) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (30364) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a7c after permanent error[0m
+[0;33mW (30534) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (30534) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a7c, Speed: 1000000 Hz).[0m
+[0;32mI (30534) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (30544) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (31554) i2c.master: I2C software timeout[0m
+[0;31mE (31554) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (31554) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (31564) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (31574) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (31574) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd6a7c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (31584) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (31594) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a7c after permanent error[0m
+[0;31mE (31604) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (31614) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 1535
+LDR Bruto: 1535 | Digito: 3
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;33mW (31634) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (31644) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (32644) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a7c, Speed: 1000000 Hz).[0m
+[0;32mI (32644) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (32644) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (32844) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (32854) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (32854) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (33654) i2c.master: I2C software timeout[0m
+[0;31mE (33654) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (33654) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (33664) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (33674) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (33674) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffd6a7c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (33684) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (33694) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a7c after permanent error[0m
+[0;33mW (33744) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (33744) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a7c, Speed: 1000000 Hz).[0m
+[0;32mI (33744) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (33754) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (34764) i2c.master: I2C software timeout[0m
+[0;31mE (34764) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (34764) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (34774) RETO 6: Other event id:7[0m
+[0;32mI (34774) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (34784) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (34794) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd6a7c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (34804) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (34814) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a7c after permanent error[0m
+[0;33mW (34904) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (34904) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a7c, Speed: 1000000 Hz).[0m
+[0;32mI (34904) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (34914) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (35924) i2c.master: I2C software timeout[0m
+[0;31mE (35924) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (35924) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (35934) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (35944) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (35944) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd6a7c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (35954) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (35964) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a7c after permanent error[0m
+[0;33mW (36134) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (36134) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a7c, Speed: 1000000 Hz).[0m
+[0;32mI (36134) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (36144) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (37154) i2c.master: I2C software timeout[0m
+[0;31mE (37154) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (37154) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (37164) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (37174) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (37174) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd6a7c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (37184) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (37194) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a7c after permanent error[0m
+[0;31mE (37204) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (37214) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 1525
+LDR Bruto: 1525 | Digito: 3
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (37674) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+
+assert failed: spinlock_acquire spinlock.h:140 (lock->count == 0)
+
+
+Backtrace: 0x40081b66:0x3ffccb80 0x40090299:0x3ffccba0 0x4009825d:0x3ffccbc0 0x40091112:0x3ffccce0 0x40091811:0x3ffccd10 0x400d9814:0x3ffccd30 0x401a54fd:0x3ffccd60 0x401a4f72:0x3ffccd90 0x401a504d:0x3ffccdd0 0x40090e71:0x3ffccdf0
+
+
+
+
+ELF file SHA256: c52abcd01
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 27 2026 14:36:24[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (85) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00010000 00177000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 00190000 00177000[0m
+[0;32mI (107) boot:  5 spiffs           Unknown data     01 82 00307000 00064000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (119) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=410f0h (266480) map[0m
+[0;32mI (219) esp_image: segment 1: paddr=00051118 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (219) esp_image: segment 2: paddr=00051124 vaddr=3ffbdb60 size=05dd8h ( 24024) load[0m
+[0;32mI (233) esp_image: segment 3: paddr=00056f04 vaddr=40080000 size=09114h ( 37140) load[0m
+[0;32mI (248) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=d8c4ch (887884) map[0m
+[0;32mI (553) esp_image: segment 5: paddr=00138c74 vaddr=40089114 size=15a50h ( 88656) load[0m
+[0;32mI (603) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (603) boot: Disabling RNG early entropy source...[0m
+[0;32mI (615) cpu_start: Multicore app[0m
+[0;32mI (624) cpu_start: Pro cpu start user code[0m
+[0;32mI (624) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (624) app_init: Application information:[0m
+[0;32mI (627) app_init: Project name:     app-template[0m
+[0;32mI (632) app_init: App version:      v1.0.0-12-gccfa622-dirty[0m
+[0;32mI (638) app_init: Compile time:     Oct 27 2026 14:36:05[0m
+[0;32mI (644) app_init: ELF file SHA256:  c52abcd01...[0m
+[0;32mI (650) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (655) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (660) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (665) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (670) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (677) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (683) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (689) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (695) heap_init: At 3FFCA550 len 00015AB0 (86 KiB): DRAM[0m
+[0;32mI (701) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (707) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (714) heap_init: At 4009EB64 len 0000149C (5 KiB): IRAM[0m
+[0;32mI (722) spi_flash: detected chip: generic[0m
+[0;32mI (725) spi_flash: flash io: dio[0m
+[0;32mI (730) coexist: coex firmware version: 4482466[0m
+[0;32mI (735) main_task: Started on CPU0[0m
+[0;32mI (745) main_task: Calling app_main()[0m
+[0;32mI (805) RETO4: Arrancando en modo Cliente para: Buku[0m
+[0;32mI (815) wifi:wifi driver task: 3ffd026c, prio:23, stack:6656, core=0[0m
+[0;32mI (825) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (825) wifi:wifi certification version: v7.0[0m
+[0;32mI (825) wifi:config NVS flash: enabled[0m
+[0;32mI (825) wifi:config nano formating: disabled[0m
+[0;32mI (835) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (835) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (845) wifi:Init management short buffer num: 32[0m
+[0;32mI (845) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (845) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (855) wifi:Init static rx buffer num: 10[0m
+[0;32mI (855) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (865) wifi_init: rx ba win: 6[0m
+[0;32mI (865) wifi_init: accept mbox: 6[0m
+[0;32mI (865) wifi_init: tcpip mbox: 32[0m
+[0;32mI (875) wifi_init: udp mbox: 6[0m
+[0;32mI (875) wifi_init: tcp mbox: 6[0m
+[0;32mI (885) wifi_init: tcp tx win: 5760[0m
+[0;32mI (885) wifi_init: tcp rx win: 5760[0m
+[0;32mI (885) wifi_init: tcp mss: 1440[0m
+[0;32mI (895) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (895) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (905) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (995) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (1075) wifi:mode : sta (20:50:0d:01:11:40)[0m
+[0;32mI (1075) wifi:enable tsf[0m
+[0;32mI (1075) WIFI_CONFIG: wifi_init_sta terminado. Esperando conexión...[0m
+[0;32mI (3495) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (3495) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (5915) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (5915) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (8335) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (8335) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (10745) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (10745) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (13165) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (13165) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (15575) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;32mI (15575) WIFI_CONFIG: Fallo absoluto al conectar al SSID:Buku tras 5 intentos[0m
+[1;31mE (15585) wifi:NAN WiFi stop[0m
+[0;32mI (15585) wifi:flush txq[0m
+[0;32mI (15585) wifi:stop sw txq[0m
+[0;32mI (15585) wifi:lmac stop hw txq[0m
+[0;33mW (15595) RETO4: No se pudo conectar al WiFi guardado. Fallback a modo Access Point...[0m
+[0;32mI (15615) wifi:mode : softAP (20:50:0d:01:11:41)[0m
+[0;32mI (15625) wifi:Total power save buffer number: 16[0m
+[0;32mI (15625) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (15625) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (15625) WIFI_CONFIG: Modo AP Iniciado. SSID:esp1141 password:123456789[0m
+[0;32mI (15635) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (15645) main_task: Returned from app_main()[0m
+[0;32mI (27745) wifi:new:<1,1>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (27755) wifi:station: b6:0c:8c:fd:dd:9d join, AID=1, bgn, 40U[0m
+[0;32mI (29165) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (30395) wifi:<ba-add>idx:2 (ifx:1, b6:0c:8c:fd:dd:9d), tid:0, ssn:16, winSize:64[0m
+[0;32mI (37025) wifi:station: b6:0c:8c:fd:dd:9d leave, AID = 1, reason = 4, bss_flags is 232563, bss:0x3ffbad08[0m
+[0;32mI (37025) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (37025) wifi:<ba-del>idx:2, tid:0[0m
+[1;31mE (37035) wifi:NAN WiFi stop[0m
+[0;32mI (37125) wifi:flush txq[0m
+[0;32mI (37125) wifi:stop sw txq[0m
+[0;32mI (37125) wifi:lmac stop hw txq[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 27 2026 14:36:24[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (85) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00010000 00177000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 00190000 00177000[0m
+[0;32mI (107) boot:  5 spiffs           Unknown data     01 82 00307000 00064000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (119) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=410f0h (266480) map[0m
+[0;32mI (219) esp_image: segment 1: paddr=00051118 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (219) esp_image: segment 2: paddr=00051124 vaddr=3ffbdb60 size=05dd8h ( 24024) load[0m
+[0;32mI (233) esp_image: segment 3: paddr=00056f04 vaddr=40080000 size=09114h ( 37140) load[0m
+[0;32mI (248) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=d8c4ch (887884) map[0m
+[0;32mI (553) esp_image: segment 5: paddr=00138c74 vaddr=40089114 size=15a50h ( 88656) load[0m
+[0;32mI (603) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (603) boot: Disabling RNG early entropy source...[0m
+[0;32mI (615) cpu_start: Multicore app[0m
+[0;32mI (624) cpu_start: Pro cpu start user code[0m
+[0;32mI (624) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (624) app_init: Application information:[0m
+[0;32mI (627) app_init: Project name:     app-template[0m
+[0;32mI (632) app_init: App version:      v1.0.0-12-gccfa622-dirty[0m
+[0;32mI (638) app_init: Compile time:     Oct 27 2026 14:36:05[0m
+[0;32mI (644) app_init: ELF file SHA256:  c52abcd01...[0m
+[0;32mI (649) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (655) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (660) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (664) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (670) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (677) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (683) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (689) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (695) heap_init: At 3FFCA550 len 00015AB0 (86 KiB): DRAM[0m
+[0;32mI (701) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (707) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (714) heap_init: At 4009EB64 len 0000149C (5 KiB): IRAM[0m
+[0;32mI (722) spi_flash: detected chip: generic[0m
+[0;32mI (724) spi_flash: flash io: dio[0m
+[0;32mI (729) coexist: coex firmware version: 4482466[0m
+[0;32mI (734) main_task: Started on CPU0[0m
+[0;32mI (744) main_task: Calling app_main()[0m
+[0;32mI (804) RETO4: Arrancando en modo Cliente para: Buku[0m
+[0;32mI (814) wifi:wifi driver task: 3ffd026c, prio:23, stack:6656, core=0[0m
+[0;32mI (824) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (824) wifi:wifi certification version: v7.0[0m
+[0;32mI (824) wifi:config NVS flash: enabled[0m
+[0;32mI (824) wifi:config nano formating: disabled[0m
+[0;32mI (834) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (834) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (844) wifi:Init management short buffer num: 32[0m
+[0;32mI (844) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (844) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (854) wifi:Init static rx buffer num: 10[0m
+[0;32mI (854) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (864) wifi_init: rx ba win: 6[0m
+[0;32mI (864) wifi_init: accept mbox: 6[0m
+[0;32mI (864) wifi_init: tcpip mbox: 32[0m
+[0;32mI (874) wifi_init: udp mbox: 6[0m
+[0;32mI (874) wifi_init: tcp mbox: 6[0m
+[0;32mI (884) wifi_init: tcp tx win: 5760[0m
+[0;32mI (884) wifi_init: tcp rx win: 5760[0m
+[0;32mI (884) wifi_init: tcp mss: 1440[0m
+[0;32mI (894) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (894) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (914) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (994) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (1014) wifi:mode : sta (20:50:0d:01:11:40)[0m
+[0;32mI (1014) wifi:enable tsf[0m
+[0;32mI (1024) WIFI_CONFIG: wifi_init_sta terminado. Esperando conexión...[0m
+[0;32mI (1034) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1034) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1094) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1104) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1124) wifi:connected with Buku, aid = 3, channel 1, BW20, bssid = ee:f7:db:bc:c5:9c[0m
+[0;32mI (1124) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (1124) wifi:pm start, type: 1[0m
+
+[0;32mI (1124) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1274) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1274) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2144) esp_netif_handlers: sta ip: 10.86.146.207, mask: 255.255.255.0, gw: 10.86.146.33[0m
+[0;32mI (2144) WIFI_CONFIG: Conectado. IP obtenida: 10.86.146.207[0m
+[0;32mI (2144) WIFI_CONFIG: Conexión exitosa al SSID:Buku[0m
+[0;32mI (2154) RETO4: WiFi STA conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones[0m
+[0;32mI (2164) RETO4: Iniciando SNTP[0m
+[0;32mI (7164) BLE: Arrancando modulo Bluetooth...[0m
+[0;32mI (7164) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (7164) BTDM_INIT: Bluetooth MAC: 20:50:0d:01:11:42[0m
+[0;32mI (7414) RETO 6: Other event id:7[0m
+[0;32mI (7424) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (7424) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;31mE (7434) esp-tls: couldn't get hostname for :eu.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;32mI (7444) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;31mE (7454) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (7464) BLE: Mi nombre Bluetooth sera: esp1140[0m
+[0;31mE (7464) mqtt_client: Error transport connect[0m
+[0;32mI (7474) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (7474) RETO 6: MQTT_EVENT_ERROR[0m
+[0;32mI (7484) NimBLE: disc_mode=2[0m
+[0;31mE (7484) RETO 6: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (7494) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (7494) RETO 6: Last errno string (Success)[0m
+[0;32mI (7504) NimBLE: 
+[0m
+[0;32mI (7514) RETO 6: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7444) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7524) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7544) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffe24c8).[0m
+[0;32mI (7544) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2280, Speed: 1000000 Hz).[0m
+[0;31mE (8554) i2c.master: I2C software timeout[0m
+[0;31mE (8554) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (8554) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8564) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (8574) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (8574) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffe2280): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (8584) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (8594) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2280 after permanent error[0m
+[0;33mW (8644) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (8644) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2280, Speed: 1000000 Hz).[0m
+[0;32mI (8644) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8654) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9664) i2c.master: I2C software timeout[0m
+[0;31mE (9664) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (9664) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9674) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9684) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (9684) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffe2280): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9694) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9704) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2280 after permanent error[0m
+[0;33mW (9794) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (9794) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2294, Speed: 1000000 Hz).[0m
+[0;32mI (9794) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9804) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (10814) i2c.master: I2C software timeout[0m
+[0;31mE (10814) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (10814) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10824) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (10834) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (10834) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffe2294): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (10844) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (10854) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2294 after permanent error[0m
+[0;33mW (11024) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (11024) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2294, Speed: 1000000 Hz).[0m
+[0;32mI (11024) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11034) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (12044) i2c.master: I2C software timeout[0m
+[0;31mE (12044) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (12044) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (12054) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (12064) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (12064) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffe2294): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (12074) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (12084) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2294 after permanent error[0m
+[0;31mE (12094) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (12104) RETO 6: Fallo al inicializar el BME680, pero seguimos vivos![0m
+[0;32mI (12114) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2294, Speed: 1000000 Hz).[0m
+[0;32mI (12124) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (12134) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (13144) i2c.master: I2C software timeout[0m
+[0;31mE (13144) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (13144) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13154) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (13164) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (13164) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffe2294): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (13174) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (13184) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2294 after permanent error[0m
+[0;33mW (13234) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (13234) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe2294, Speed: 1000000 Hz).[0m
+[0;32mI (13234) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13244) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13594) wifi:state: run -> init (0x3c0)[0m
+[0;32mI (13604) wifi:pm stop, total sleep time: 8954898 us / 12472221 us[0m
+
+[0;32mI (13604) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13614) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (13614) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (14254) i2c.master: I2C software timeout[0m
+[0;31mE (14254) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (14254) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14264) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (14274) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (14274) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffe2294): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (14284) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (14294) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe2294 after permanent error[0m
+[0;33mW (14384) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (14384) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6b30, Speed: 1000000 Hz).[0m
+[0;32mI (14384) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14394) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (15404) i2c.master: I2C software timeout[0m
+[0;31mE (15404) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (15404) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15414) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (15424) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (15424) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd6b30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (15434) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (15444) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6b30 after permanent error[0m
+[0;33mW (15614) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (15614) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6b30, Speed: 1000000 Hz).[0m
+[0;32mI (15614) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15624) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (16634) i2c.master: I2C software timeout[0m
+[0;31mE (16634) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (16634) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (16644) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (16654) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (16654) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd6b30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (16664) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (16674) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6b30 after permanent error[0m
+[0;31mE (16684) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;32mI (16694) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6b30, Speed: 1000000 Hz).[0m
+[0;32mI (16704) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (16714) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (17724) i2c.master: I2C software timeout[0m
+[0;31mE (17724) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (17724) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17734) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (17744) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (17744) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffd6b30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (17754) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (17764) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6b30 after permanent error[0m
+[0;33mW (17814) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (17814) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6b30, Speed: 1000000 Hz).[0m
+[0;32mI (17814) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17824) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (18434) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (18434) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (18434) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (18834) i2c.master: I2C software timeout[0m
+[0;31mE (18834) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (18834) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (18844) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (18854) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (18854) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd6b30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (18864) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (18874) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6b30 after permanent error[0m
+[0;33mW (18964) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (18964) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd693c, Speed: 1000000 Hz).[0m
+[0;32mI (18964) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (18974) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (19984) i2c.master: I2C software timeout[0m
+[0;31mE (19984) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (19984) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (19994) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (20004) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (20004) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd693c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (20014) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (20024) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd693c after permanent error[0m
+[0;33mW (20194) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (20194) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd693c, Speed: 1000000 Hz).[0m
+[0;32mI (20194) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (20204) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (21214) i2c.master: I2C software timeout[0m
+[0;31mE (21214) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (21214) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (21224) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (21234) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (21234) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd693c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (21244) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (21254) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd693c after permanent error[0m
+[0;31mE (21264) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;32mI (21274) wifi:Set ps type: 1, coexist: 1[0m
+
+[0;32mI (21284) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd693c, Speed: 1000000 Hz).[0m
+[0;32mI (21294) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (21304) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (22314) i2c.master: I2C software timeout[0m
+[0;31mE (22314) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (22314) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22324) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (22334) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (22334) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffd693c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (22344) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (22354) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd693c after permanent error[0m
+[0;33mW (22404) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (22404) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd693c, Speed: 1000000 Hz).[0m
+[0;32mI (22404) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22414) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22514) RETO 6: Other event id:7[0m
+[0;32mI (23264) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (23264) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (23264) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (23424) i2c.master: I2C software timeout[0m
+[0;31mE (23424) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (23424) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23434) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (23444) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (23444) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd693c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (23454) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (23464) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd693c after permanent error[0m
+[0;33mW (23554) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (23554) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd693c, Speed: 1000000 Hz).[0m
+[0;32mI (23554) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23564) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (24574) i2c.master: I2C software timeout[0m
+[0;31mE (24574) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (24574) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24584) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (24594) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (24594) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd693c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (24604) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (24614) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd693c after permanent error[0m
+[0;33mW (24784) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (24784) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd68d8, Speed: 1000000 Hz).[0m
+[0;32mI (24784) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24794) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (25804) i2c.master: I2C software timeout[0m
+[0;31mE (25804) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (25804) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (25814) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (25824) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (25824) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd68d8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (25834) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (25844) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd68d8 after permanent error[0m
+[0;31mE (25854) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (25864) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 1363
+LDR Bruto: 1363 | Digito: 3
+Temp: 1.97 ºC | Hum: 1.97 % | Pres: -0.00 hPa | Gas: 0.00 Ohm
+[0;32mI (28094) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (28094) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (28094) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (29494) esp-tls: couldn't get hostname for :eu.thingsboard.cloud: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (29494) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (29494) mqtt_client: Error transport connect[0m
+[0;32mI (29504) RETO 6: MQTT_EVENT_ERROR[0m
+[0;31mE (29504) RETO 6: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (29514) RETO 6: Last errno string (Success)[0m
+[0;32mI (29514) RETO 6: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (29524) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (29524) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (30534) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a78, Speed: 1000000 Hz).[0m
+[0;32mI (30534) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (30534) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (31544) i2c.master: I2C software timeout[0m
+[0;31mE (31544) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (31544) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (31554) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (31564) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (31564) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffd6a78): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (31574) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (31584) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a78 after permanent error[0m
+[0;33mW (31634) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (31634) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a78, Speed: 1000000 Hz).[0m
+[0;32mI (31634) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (31644) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (32654) i2c.master: I2C software timeout[0m
+[0;31mE (32654) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (32654) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (32664) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (32674) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (32674) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd6a78): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (32684) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (32694) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a78 after permanent error[0m
+[0;33mW (32784) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (32784) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a78, Speed: 1000000 Hz).[0m
+[0;32mI (32784) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (32794) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (32924) wifi:Coexist: Wi-Fi connect fail, apply reconnect coex policy[0m
+
+[0;32mI (32924) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;32mI (32924) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (33804) i2c.master: I2C software timeout[0m
+[0;31mE (33804) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (33804) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (33814) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (33824) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (33824) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd6a78): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (33834) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (33844) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a78 after permanent error[0m
+[0;33mW (34014) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (34014) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a78, Speed: 1000000 Hz).[0m
+[0;32mI (34014) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (34024) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (35034) i2c.master: I2C software timeout[0m
+[0;31mE (35034) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (35034) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (35044) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (35054) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (35054) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd6a78): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (35064) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (35074) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd6a78 after permanent error[0m
+[0;31mE (35084) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (35094) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 1315
+LDR Bruto: 1315 | Digito: 3
+Temp: 1.97 ºC | Hum: 1.97 % | Pres: -0.00 hPa | Gas: 0.00 Ohm
+[0;33mW (35114) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (35124) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (36124) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd6a78, Speed: 1000000 Hz).[0m
+[0;32mI (36124) gpio: GPIO[21]|

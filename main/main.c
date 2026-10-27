@@ -63,7 +63,7 @@ void app_main(void)
    
 
     
-      FILE * f = fopen("/spiffs/config.txt", "r");
+   /*   FILE * f = fopen("/spiffs/config.txt", "r");
 
     if (f == NULL) {
         ESP_LOGW(TAG, "No hay config.txt. ");
@@ -72,7 +72,16 @@ void app_main(void)
     		fclose(f);
     }
            f = fopen("/spiffs/config.txt", "r");
-
+*/
+    // Escribe la red de tu casa SIEMPRE al arrancar
+    FILE * f = fopen("/spiffs/config.txt", "w");
+    if (f != NULL) {
+        fprintf(f, "Buku\nBrunocabello\n");
+        fclose(f);
+    }
+    
+    // Lee el archivo recién guardado
+    f = fopen("/spiffs/config.txt", "r");
     	if (f!=NULL) {
         char ssid[32] = {0};
         char password[64] = {0};
@@ -86,7 +95,7 @@ void app_main(void)
         bool conectado = arrancar_wifi_sta(ssid, password); 
 
         if (conectado) {
-            ESP_LOGI(TAG, "WiFi v2 conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
+            ESP_LOGI(TAG, "WiFi v3 conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
             iniciar_sntp();
 
             vTaskDelay(pdMS_TO_TICKS(5000)); 
