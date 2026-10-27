@@ -33,6 +33,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 static void log_error_if_nonzero(const char *message, int error_code);
 static volatile int periodo_ms = 1000;
 
+int ejecutar_actualizacion_ota();
 
 
 

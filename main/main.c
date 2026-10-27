@@ -98,7 +98,7 @@ void app_main(void)
 }
 
 void ejecutar_actualizacion_ota() {
-    esp_https_client_config_t conf_client = {
+    esp_http_client_config_t conf_client = {
         .url = "https://github.com/samugc45/sbc_hito6_over_the_air/raw/refs/heads/main/build/app-template.bin",
         .cert_pem = ca_cert_pem_start,
     };
@@ -120,9 +120,9 @@ void ejecutar_actualizacion_ota() {
 
 void iniciar_sntp(void) {
     ESP_LOGI(TAG, "Iniciando SNTP");
-    sntp_setoperatingmode(SNTP_OPMODE_POLL);
-    sntp_setservername(0, "pool.ntp.org");
-    sntp_init();
+    esp_sntp_setoperatingmode(SNTP_OPMODE_POLL);
+    esp_sntp_setservername(0, "pool.ntp.org");
+    esp_sntp_init();
 
     setenv("TZ", "CET-1CEST,M3.5.0,M10.5.0/3", 1);
     tzset();
@@ -141,7 +141,7 @@ void tarea_ota_programada(void *pvParameters) {
         if (info_tiempo.tm_hour < 12) {
             ota_realizada_hoy = false;
         }
-        
+
         if (info_tiempo.tm_hour == 12 && !ota_realizada_hoy) {
             ESP_LOGI("OTA", "¡Son las 12:00! Ejecutando actualización programada...");
             ejecutar_actualizacion_ota();
