@@ -141,8 +141,8 @@ void tarea_ota_programada(void *pvParameters) {
         if (info_tiempo.tm_hour < 12) {
             ota_realizada_hoy = false;
         }
-
-1        if (info_tiempo.tm_hour == 12 && !ota_realizada_hoy) {
+        
+        if (info_tiempo.tm_hour == 12 && !ota_realizada_hoy) {
             ESP_LOGI("OTA", "¡Son las 12:00! Ejecutando actualización programada...");
             ejecutar_actualizacion_ota();
             ota_realizada_hoy = true;
