@@ -27,6 +27,8 @@
 #include "esp_sntp.h"
 #include <time.h>
 
+#include "esp_crt_bundle.h"
+
 /* https://github.com/samugc45/sbc_hito6_over_the_air/raw/refs/heads/main/build/app-template.bin*/
 
 static const char *TAG = "RETO4";
@@ -86,7 +88,7 @@ void app_main(void)
         if (conectado) {
             ESP_LOGI(TAG, "WiFi STA conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
             iniciar_sntp();
-            vTaskDelay(pdMS_TO_TICKS(3000));
+            vTaskDelay(pdMS_TO_TICKS(5000));
             arrancar_bluetooth();
             ejecutar_actualizacion_ota();
             programa_main();
@@ -98,7 +100,7 @@ void app_main(void)
     }
 }
 
-void ejecutar_actualizacion_ota() {
+/* void ejecutar_actualizacion_ota() {
     esp_http_client_config_t conf_client = {
         .url = "https://github.com/samugc45/sbc_hito6_over_the_air/raw/refs/heads/main/build/app-template.bin",
         .cert_pem = ca_cert_pem_start,
@@ -117,7 +119,28 @@ void ejecutar_actualizacion_ota() {
         ESP_LOGE("OTA","FALLO ACTUALIZACION OTA");
     }
 }
+*/
 
+void ejecutar_actualizacion_ota() {
+    esp_http_client_config_t conf_client = {
+        .url = "https://github.com/samugc45/sbc_hito6_over_the_air/raw/refs/heads/main/build/app-template.bin",
+        .crt_bundle_attach = esp_crt_bundle_attach, // Usa los certificados integrados de ESP-IDF
+        .keep_alive_enable = true
+    };
+
+    esp_https_ota_config_t conf_ota = {
+        .http_config = &conf_client,
+    };
+
+    esp_err_t err = esp_https_ota(&conf_ota);
+
+    if(err == ESP_OK){
+        ESP_LOGI("OTA","ACTUALIZACION EXITOSA OTA");
+        esp_restart();
+    } else {
+        ESP_LOGE("OTA","FALLO ACTUALIZACION OTA: %s", esp_err_to_name(err));
+    }
+}
 
 void iniciar_sntp(void) {
     ESP_LOGI(TAG, "Iniciando SNTP");
