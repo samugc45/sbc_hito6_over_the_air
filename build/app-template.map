@@ -41712,974 +41712,974 @@ LOAD C:/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/..
                 0x3f400120                        _flash_rodata_start = ABSOLUTE (.)
  *(EXCLUDE_FILE(*libspi_flash.a:spi_flash_wrap.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:flash_brownout_hook.* *libsoc.a:lldesc.* *libnewlib.a:stdatomic.* *libnewlib.a:heap.* *libnewlib.a:assert.* *libnewlib.a:abort.* *libhal.a:wdt_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:ledc_hal_iram.* *libhal.a:i2c_hal_iram.* *libhal.a:cache_hal_esp32.* *libesp_system.a:ubsan.* *libesp_system.a:image_process.* *libesp_system.a:esp_err.* *libesp_rom.a:esp_rom_spiflash.* *libesp_mm.a:esp_cache.* *libesp_mm.a:cache_esp32.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:mspi_timing_tuning.* *libesp_hw_support.a:esp_memory_utils.* *libapp_trace.a:port_uart.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:app_trace.* *libphy.a *libgcov.a) .rodata EXCLUDE_FILE(*libspi_flash.a:spi_flash_wrap.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:flash_brownout_hook.* *libsoc.a:lldesc.* *libnewlib.a:stdatomic.* *libnewlib.a:heap.* *libnewlib.a:assert.* *libnewlib.a:abort.* *libhal.a:wdt_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:ledc_hal_iram.* *libhal.a:i2c_hal_iram.* *libhal.a:cache_hal_esp32.* *libesp_system.a:ubsan.* *libesp_system.a:image_process.* *libesp_system.a:esp_err.* *libesp_rom.a:esp_rom_spiflash.* *libesp_mm.a:esp_cache.* *libesp_mm.a:cache_esp32.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:mspi_timing_tuning.* *libesp_hw_support.a:esp_memory_utils.* *libapp_trace.a:port_uart.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:app_trace.* *libphy.a *libgcov.a) .rodata.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_wrap.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:flash_brownout_hook.* *libsoc.a:lldesc.* *libnewlib.a:stdatomic.* *libnewlib.a:heap.* *libnewlib.a:assert.* *libnewlib.a:abort.* *libhal.a:wdt_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:ledc_hal_iram.* *libhal.a:i2c_hal_iram.* *libhal.a:cache_hal_esp32.* *libesp_system.a:ubsan.* *libesp_system.a:image_process.* *libesp_system.a:esp_err.* *libesp_rom.a:esp_rom_spiflash.* *libesp_mm.a:esp_cache.* *libesp_mm.a:cache_esp32.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:mspi_timing_tuning.* *libesp_hw_support.a:esp_memory_utils.* *libapp_trace.a:port_uart.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:app_trace.* *libphy.a *libgcov.a) .sdata2 EXCLUDE_FILE(*libspi_flash.a:spi_flash_wrap.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:flash_brownout_hook.* *libsoc.a:lldesc.* *libnewlib.a:stdatomic.* *libnewlib.a:heap.* *libnewlib.a:assert.* *libnewlib.a:abort.* *libhal.a:wdt_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:ledc_hal_iram.* *libhal.a:i2c_hal_iram.* *libhal.a:cache_hal_esp32.* *libesp_system.a:ubsan.* *libesp_system.a:image_process.* *libesp_system.a:esp_err.* *libesp_rom.a:esp_rom_spiflash.* *libesp_mm.a:esp_cache.* *libesp_mm.a:cache_esp32.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:mspi_timing_tuning.* *libesp_hw_support.a:esp_memory_utils.* *libapp_trace.a:port_uart.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:app_trace.* *libphy.a *libgcov.a) .sdata2.* EXCLUDE_FILE(*libspi_flash.a:spi_flash_wrap.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:flash_brownout_hook.* *libsoc.a:lldesc.* *libnewlib.a:stdatomic.* *libnewlib.a:heap.* *libnewlib.a:assert.* *libnewlib.a:abort.* *libhal.a:wdt_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:ledc_hal_iram.* *libhal.a:i2c_hal_iram.* *libhal.a:cache_hal_esp32.* *libesp_system.a:ubsan.* *libesp_system.a:image_process.* *libesp_system.a:esp_err.* *libesp_rom.a:esp_rom_spiflash.* *libesp_mm.a:esp_cache.* *libesp_mm.a:cache_esp32.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:mspi_timing_tuning.* *libesp_hw_support.a:esp_memory_utils.* *libapp_trace.a:port_uart.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:app_trace.* *libphy.a *libgcov.a) .srodata EXCLUDE_FILE(*libspi_flash.a:spi_flash_wrap.* *libspi_flash.a:spi_flash_chip_winbond.* *libspi_flash.a:spi_flash_chip_th.* *libspi_flash.a:spi_flash_chip_mxic.* *libspi_flash.a:spi_flash_chip_issi.* *libspi_flash.a:spi_flash_chip_generic.* *libspi_flash.a:spi_flash_chip_gd.* *libspi_flash.a:spi_flash_chip_boya.* *libspi_flash.a:memspi_host_driver.* *libspi_flash.a:flash_brownout_hook.* *libsoc.a:lldesc.* *libnewlib.a:stdatomic.* *libnewlib.a:heap.* *libnewlib.a:assert.* *libnewlib.a:abort.* *libhal.a:wdt_hal_iram.* *libhal.a:spi_slave_hal_iram.* *libhal.a:spi_hal_iram.* *libhal.a:spi_flash_hal_iram.* *libhal.a:spi_flash_encrypt_hal_iram.* *libhal.a:mmu_hal.* *libhal.a:ledc_hal_iram.* *libhal.a:i2c_hal_iram.* *libhal.a:cache_hal_esp32.* *libesp_system.a:ubsan.* *libesp_system.a:image_process.* *libesp_system.a:esp_err.* *libesp_rom.a:esp_rom_spiflash.* *libesp_mm.a:esp_cache.* *libesp_mm.a:cache_esp32.* *libesp_hw_support.a:rtc_clk.* *libesp_hw_support.a:mspi_timing_tuning.* *libesp_hw_support.a:esp_memory_utils.* *libapp_trace.a:port_uart.* *libapp_trace.a:app_trace_util.* *libapp_trace.a:app_trace.* *libphy.a *libgcov.a) .srodata.*)
  .rodata.__esp_system_init_fn_init_show_app_info.str1.4
-                0x3f400120    0x17fb4 esp-idf/esp_app_format/libesp_app_format.a(esp_app_desc.c.obj)
+                0x3f400120    0x17fb8 esp-idf/esp_app_format/libesp_app_format.a(esp_app_desc.c.obj)
                                 0x12d (size before relaxing)
  .rodata.__esp_system_init_fn_init_efuse_show_app_info.str1.4
-                0x3f4180d4       0xc1 esp-idf/efuse/libefuse.a(esp_efuse_startup.c.obj)
+                0x3f4180d8       0xc1 esp-idf/efuse/libefuse.a(esp_efuse_startup.c.obj)
  .rodata.__esp_system_init_fn_init_efuse.str1.4
-                0x3f4180d4       0x3c esp-idf/efuse/libefuse.a(esp_efuse_startup.c.obj)
+                0x3f4180d8       0x3c esp-idf/efuse/libefuse.a(esp_efuse_startup.c.obj)
  .rodata.__FUNCTION__$0
-                0x3f4180d4       0x20 esp-idf/efuse/libefuse.a(esp_efuse_startup.c.obj)
+                0x3f4180d8       0x20 esp-idf/efuse/libefuse.a(esp_efuse_startup.c.obj)
  .rodata.set_cnt_in_reg.str1.4
-                0x3f4180f4       0x63 esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
+                0x3f4180f8       0x63 esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
  .rodata.write_reg.str1.4
-                0x3f4180f4      0x10c esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
+                0x3f4180f8      0x10c esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
  .rodata.esp_efuse_utility_process.str1.4
-                0x3f4180f4       0x69 esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
+                0x3f4180f8       0x69 esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
  .rodata.esp_efuse_utility_read_reg.str1.4
-                0x3f4180f4       0xd0 esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
+                0x3f4180f8       0xd0 esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
  .rodata.__func__$1
-                0x3f4180f4       0x1b esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
- *fill*         0x3f41810f        0x1 
+                0x3f4180f8       0x1b esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
+ *fill*         0x3f418113        0x1 
  .rodata.__func__$7
-                0x3f418110       0x1a esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
- *fill*         0x3f41812a        0x2 
+                0x3f418114       0x1a esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
+ *fill*         0x3f41812e        0x2 
  .rodata.MAC_VERSION
-                0x3f41812c        0x4 esp-idf/efuse/libefuse.a(esp_efuse_table.c.obj)
- .rodata.MAC_CUSTOM
                 0x3f418130        0x4 esp-idf/efuse/libefuse.a(esp_efuse_table.c.obj)
- .rodata.CUSTOM_MAC_CRC
+ .rodata.MAC_CUSTOM
                 0x3f418134        0x4 esp-idf/efuse/libefuse.a(esp_efuse_table.c.obj)
- .rodata.MAC_CRC
+ .rodata.CUSTOM_MAC_CRC
                 0x3f418138        0x4 esp-idf/efuse/libefuse.a(esp_efuse_table.c.obj)
- .rodata.MAC    0x3f41813c       0x18 esp-idf/efuse/libefuse.a(esp_efuse_table.c.obj)
+ .rodata.MAC_CRC
+                0x3f41813c        0x4 esp-idf/efuse/libefuse.a(esp_efuse_table.c.obj)
+ .rodata.MAC    0x3f418140       0x18 esp-idf/efuse/libefuse.a(esp_efuse_table.c.obj)
  .rodata.range_read_addr_blocks
-                0x3f418154       0x20 esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
-                0x3f418154                range_read_addr_blocks
+                0x3f418158       0x20 esp-idf/efuse/libefuse.a(esp_efuse_utility.c.obj)
+                0x3f418158                range_read_addr_blocks
  .rodata.__esp_system_init_fn_init_show_cpu_freq.str1.4
-                0x3f418174       0x64 esp-idf/esp_system/libesp_system.a(startup_funcs.c.obj)
+                0x3f418178       0x64 esp-idf/esp_system/libesp_system.a(startup_funcs.c.obj)
  .rodata.__esp_system_init_fn_init_flash.str1.4
-                0x3f418174       0x40 esp-idf/esp_system/libesp_system.a(startup_funcs.c.obj)
+                0x3f418178       0x40 esp-idf/esp_system/libesp_system.a(startup_funcs.c.obj)
  .rodata.__func__$0
-                0x3f418174       0x20 esp-idf/esp_system/libesp_system.a(startup_funcs.c.obj)
+                0x3f418178       0x20 esp-idf/esp_system/libesp_system.a(startup_funcs.c.obj)
  .rodata.start_other_core.str1.4
-                0x3f418194       0xcc esp-idf/esp_system/libesp_system.a(cpu_start.c.obj)
+                0x3f418198       0xcc esp-idf/esp_system/libesp_system.a(cpu_start.c.obj)
  .rodata.str1.4
-                0x3f418194       0x26 esp-idf/esp_system/libesp_system.a(cpu_start.c.obj)
- .rodata        0x3f418194        0x5 esp-idf/esp_system/libesp_system.a(brownout.c.obj)
+                0x3f418198       0x26 esp-idf/esp_system/libesp_system.a(cpu_start.c.obj)
+ .rodata        0x3f418198        0x5 esp-idf/esp_system/libesp_system.a(brownout.c.obj)
  .rodata.str1.4
-                0x3f418199       0x33 esp-idf/esp_system/libesp_system.a(esp_ipc_isr.c.obj)
- *fill*         0x3f418199        0x3 
+                0x3f41819d       0x33 esp-idf/esp_system/libesp_system.a(esp_ipc_isr.c.obj)
+ *fill*         0x3f41819d        0x3 
  .rodata.__func__$0
-                0x3f41819c       0x1e esp-idf/esp_system/libesp_system.a(esp_ipc_isr.c.obj)
+                0x3f4181a0       0x1e esp-idf/esp_system/libesp_system.a(esp_ipc_isr.c.obj)
  .rodata.select_rtc_slow_clk.str1.4
-                0x3f4181ba       0x5c esp-idf/esp_system/libesp_system.a(clk.c.obj)
- *fill*         0x3f4181ba        0x2 
- .rodata        0x3f4181bc        0x4 esp-idf/esp_system/libesp_system.a(clk.c.obj)
+                0x3f4181be       0x5c esp-idf/esp_system/libesp_system.a(clk.c.obj)
+ *fill*         0x3f4181be        0x2 
+ .rodata        0x3f4181c0        0x4 esp-idf/esp_system/libesp_system.a(clk.c.obj)
  .rodata.esp_clk_init.str1.4
-                0x3f4181c0       0x68 esp-idf/esp_system/libesp_system.a(clk.c.obj)
+                0x3f4181c4       0x68 esp-idf/esp_system/libesp_system.a(clk.c.obj)
  .rodata.__func__$0
-                0x3f4181c0        0xd esp-idf/esp_system/libesp_system.a(clk.c.obj)
+                0x3f4181c4        0xd esp-idf/esp_system/libesp_system.a(clk.c.obj)
  .rodata.str1.4
-                0x3f4181cd       0x5e esp-idf/esp_system/libesp_system.a(reset_reason.c.obj)
- *fill*         0x3f4181cd        0x3 
+                0x3f4181d1       0x5e esp-idf/esp_system/libesp_system.a(reset_reason.c.obj)
+ *fill*         0x3f4181d1        0x3 
  .rodata.__func__$0
-                0x3f4181d0       0x1a esp-idf/esp_system/libesp_system.a(reset_reason.c.obj)
- *fill*         0x3f4181ea        0x2 
- .rodata        0x3f4181ec       0x10 esp-idf/esp_system/libesp_system.a(system_internal.c.obj)
- .rodata        0x3f4181fc       0x10 esp-idf/esp_system/libesp_system.a(panic.c.obj)
+                0x3f4181d4       0x1a esp-idf/esp_system/libesp_system.a(reset_reason.c.obj)
+ *fill*         0x3f4181ee        0x2 
+ .rodata        0x3f4181f0       0x10 esp-idf/esp_system/libesp_system.a(system_internal.c.obj)
+ .rodata        0x3f418200       0x10 esp-idf/esp_system/libesp_system.a(panic.c.obj)
  .rodata.esp_panic_handler.str1.4
-                0x3f41820c       0x87 esp-idf/esp_system/libesp_system.a(panic.c.obj)
+                0x3f418210       0x87 esp-idf/esp_system/libesp_system.a(panic.c.obj)
  .rodata.do_system_init_fn.str1.4
-                0x3f41820c       0x51 esp-idf/esp_system/libesp_system.a(startup.c.obj)
+                0x3f418210       0x51 esp-idf/esp_system/libesp_system.a(startup.c.obj)
  .rodata.g_startup_fn
-                0x3f41820c        0x8 esp-idf/esp_system/libesp_system.a(startup.c.obj)
-                0x3f41820c                g_startup_fn
+                0x3f418210        0x8 esp-idf/esp_system/libesp_system.a(startup.c.obj)
+                0x3f418210                g_startup_fn
  .rodata.frame_to_panic_info.str1.4
-                0x3f418214        0x8 esp-idf/esp_system/libesp_system.a(panic_handler.c.obj)
+                0x3f418218        0x8 esp-idf/esp_system/libesp_system.a(panic_handler.c.obj)
  .rodata.print_state_for_core.str1.4
-                0x3f418214        0x3 esp-idf/esp_system/libesp_system.a(panic_handler.c.obj)
+                0x3f418218        0x3 esp-idf/esp_system/libesp_system.a(panic_handler.c.obj)
  .rodata.print_debug_exception_details.str1.4
-                0x3f418214       0x93 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
+                0x3f418218       0x93 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
  .rodata.print_illegal_instruction_details.str1.4
-                0x3f418214       0x1a esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
+                0x3f418218       0x1a esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
  .rodata.panic_print_registers.str1.4
-                0x3f418214      0x1a5 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
- .rodata        0x3f418214       0x60 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
+                0x3f418218      0x1a5 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
+ .rodata        0x3f418218       0x60 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
  .rodata.panic_arch_fill_info.str1.4
-                0x3f418274       0x21 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
+                0x3f418278       0x21 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
  .rodata.panic_soc_fill_info.str1.4
-                0x3f418274        0xf esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
+                0x3f418278        0xf esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
  .rodata.str1.4
-                0x3f418274      0x2b3 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
+                0x3f418278      0x2b3 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
  .rodata.pseudo_reason$0
-                0x3f418274       0x20 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
+                0x3f418278       0x20 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
  .rodata.reason$1
-                0x3f418294       0xa0 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
+                0x3f418298       0xa0 esp-idf/esp_system/libesp_system.a(panic_arch.c.obj)
  .rodata.str1.4
-                0x3f418334       0xd1 esp-idf/esp_system/libesp_system.a(debug_helpers.c.obj)
+                0x3f418338       0xd1 esp-idf/esp_system/libesp_system.a(debug_helpers.c.obj)
  .rodata.str1.4
-                0x3f418334       0x42 esp-idf/esp_system/libesp_system.a(esp_ipc.c.obj)
+                0x3f418338       0x42 esp-idf/esp_system/libesp_system.a(esp_ipc.c.obj)
  .rodata.esp_ipc_init.str1.4
-                0x3f418334        0xe esp-idf/esp_system/libesp_system.a(esp_ipc.c.obj)
+                0x3f418338        0xe esp-idf/esp_system/libesp_system.a(esp_ipc.c.obj)
  .rodata.__func__$0
-                0x3f418334        0x9 esp-idf/esp_system/libesp_system.a(esp_ipc.c.obj)
- *fill*         0x3f41833d        0x3 
+                0x3f418338        0x9 esp-idf/esp_system/libesp_system.a(esp_ipc.c.obj)
+ *fill*         0x3f418341        0x3 
  .rodata.__func__$1
-                0x3f418340        0xd esp-idf/esp_system/libesp_system.a(esp_ipc.c.obj)
+                0x3f418344        0xd esp-idf/esp_system/libesp_system.a(esp_ipc.c.obj)
  .rodata.uart_hal_rxfifo_rst.str1.4
-                0x3f41834d       0xc1 esp-idf/hal/libhal.a(uart_hal_iram.c.obj)
+                0x3f418351       0xc1 esp-idf/hal/libhal.a(uart_hal_iram.c.obj)
  .rodata.uart_hal_write_txfifo.str1.4
-                0x3f41834d       0x90 esp-idf/hal/libhal.a(uart_hal_iram.c.obj)
- *fill*         0x3f41834d        0x3 
+                0x3f418351       0x90 esp-idf/hal/libhal.a(uart_hal_iram.c.obj)
+ *fill*         0x3f418351        0x3 
  .rodata.__func__$1
-                0x3f418350       0x15 esp-idf/hal/libhal.a(uart_hal_iram.c.obj)
- *fill*         0x3f418365        0x3 
+                0x3f418354       0x15 esp-idf/hal/libhal.a(uart_hal_iram.c.obj)
+ *fill*         0x3f418369        0x3 
  .rodata.__func__$2
-                0x3f418368       0x13 esp-idf/hal/libhal.a(uart_hal_iram.c.obj)
+                0x3f41836c       0x13 esp-idf/hal/libhal.a(uart_hal_iram.c.obj)
  .rodata.get_cached_log_level.str1.4
-                0x3f41837b       0x67 esp-idf/log/liblog.a(log.c.obj)
+                0x3f41837f       0x67 esp-idf/log/liblog.a(log.c.obj)
  .rodata.esp_log_level_set.str1.4
-                0x3f41837b        0x2 esp-idf/log/liblog.a(log.c.obj)
- *fill*         0x3f41837b        0x1 
+                0x3f41837f        0x2 esp-idf/log/liblog.a(log.c.obj)
+ *fill*         0x3f41837f        0x1 
  .rodata.__func__$0
-                0x3f41837c       0x15 esp-idf/log/liblog.a(log.c.obj)
- *fill*         0x3f418391        0x3 
+                0x3f418380       0x15 esp-idf/log/liblog.a(log.c.obj)
+ *fill*         0x3f418395        0x3 
  .rodata.__func__$1
-                0x3f418394       0x12 esp-idf/log/liblog.a(log.c.obj)
- *fill*         0x3f4183a6        0x2 
+                0x3f418398       0x12 esp-idf/log/liblog.a(log.c.obj)
+ *fill*         0x3f4183aa        0x2 
  .rodata.__func__$5
-                0x3f4183a8       0x11 esp-idf/heap/libheap.a(heap_caps.c.obj)
- *fill*         0x3f4183b9        0x3 
+                0x3f4183ac       0x11 esp-idf/heap/libheap.a(heap_caps.c.obj)
+ *fill*         0x3f4183bd        0x3 
  .rodata.__func__$6
-                0x3f4183bc       0x12 esp-idf/heap/libheap.a(heap_caps.c.obj)
- *fill*         0x3f4183ce        0x2 
+                0x3f4183c0       0x12 esp-idf/heap/libheap.a(heap_caps.c.obj)
+ *fill*         0x3f4183d2        0x2 
  .rodata.__func__$10
-                0x3f4183d0       0x1a esp-idf/heap/libheap.a(heap_caps.c.obj)
- *fill*         0x3f4183ea        0x2 
+                0x3f4183d4       0x1a esp-idf/heap/libheap.a(heap_caps.c.obj)
+ *fill*         0x3f4183ee        0x2 
  .rodata.__func__$11
-                0x3f4183ec       0x19 esp-idf/heap/libheap.a(heap_caps.c.obj)
- *fill*         0x3f418405        0x3 
+                0x3f4183f0       0x19 esp-idf/heap/libheap.a(heap_caps.c.obj)
+ *fill*         0x3f418409        0x3 
  .rodata.__func__$12
-                0x3f418408       0x11 esp-idf/heap/libheap.a(heap_caps.c.obj)
+                0x3f41840c       0x11 esp-idf/heap/libheap.a(heap_caps.c.obj)
  .rodata.register_heap.str1.4
-                0x3f418419       0x43 esp-idf/heap/libheap.a(heap_caps_init.c.obj)
+                0x3f41841d       0x43 esp-idf/heap/libheap.a(heap_caps_init.c.obj)
  .rodata.heap_caps_init.str1.4
-                0x3f418419      0x130 esp-idf/heap/libheap.a(heap_caps_init.c.obj)
- *fill*         0x3f418419        0x3 
+                0x3f41841d      0x130 esp-idf/heap/libheap.a(heap_caps_init.c.obj)
+ *fill*         0x3f41841d        0x3 
  .rodata.__func__$1
-                0x3f41841c       0x14 esp-idf/heap/libheap.a(heap_caps_init.c.obj)
+                0x3f418420       0x14 esp-idf/heap/libheap.a(heap_caps_init.c.obj)
  .rodata.__func__$2
-                0x3f418430        0xf esp-idf/heap/libheap.a(heap_caps_init.c.obj)
- *fill*         0x3f41843f        0x1 
+                0x3f418434        0xf esp-idf/heap/libheap.a(heap_caps_init.c.obj)
+ *fill*         0x3f418443        0x1 
  .rodata.__func__$3
-                0x3f418440        0xe esp-idf/heap/libheap.a(heap_caps_init.c.obj)
+                0x3f418444        0xe esp-idf/heap/libheap.a(heap_caps_init.c.obj)
  .rodata.assert_valid_block.str1.4
-                0x3f41844e       0x32 esp-idf/heap/libheap.a(multi_heap.c.obj)
+                0x3f418452       0x32 esp-idf/heap/libheap.a(multi_heap.c.obj)
  .rodata.multi_heap_register_impl.str1.4
-                0x3f41844e       0x2f esp-idf/heap/libheap.a(multi_heap.c.obj)
+                0x3f418452       0x2f esp-idf/heap/libheap.a(multi_heap.c.obj)
  .rodata.multi_heap_get_first_block.str1.4
-                0x3f41844e        0xd esp-idf/heap/libheap.a(multi_heap.c.obj)
- *fill*         0x3f41844e        0x2 
+                0x3f418452        0xd esp-idf/heap/libheap.a(multi_heap.c.obj)
+ *fill*         0x3f418452        0x2 
  .rodata.__func__$4
-                0x3f418450       0x18 esp-idf/heap/libheap.a(multi_heap.c.obj)
+                0x3f418454       0x18 esp-idf/heap/libheap.a(multi_heap.c.obj)
  .rodata.__func__$0
-                0x3f418468       0x19 esp-idf/heap/libheap.a(multi_heap.c.obj)
+                0x3f41846c       0x19 esp-idf/heap/libheap.a(multi_heap.c.obj)
  .rodata.control_construct.str1.4
-                0x3f418481       0xca esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418485       0xca esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.default_walker.str1.4
-                0x3f418481       0x26 esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418485       0x26 esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.tlsf_check.str1.4
-                0x3f418481       0x4a esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418485       0x4a esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.tlsf_add_pool.str1.4
-                0x3f418481      0x142 esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418485      0x142 esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.tlsf_remove_pool.str1.4
-                0x3f418481      0x116 esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418485      0x116 esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.tlsf_create.str1.4
-                0x3f418481       0x32 esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418485       0x32 esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.tlsf_malloc.str1.4
-                0x3f418481      0x1a7 esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418485      0x1a7 esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.tlsf_memalign_offs.str1.4
-                0x3f418481       0x6b esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418485       0x6b esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.tlsf_free.str1.4
-                0x3f418481      0x110 esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418485      0x110 esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.tlsf_realloc.str1.4
-                0x3f418481       0x2e esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f418481        0x3 
+                0x3f418485       0x2e esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f418485        0x3 
  .rodata.__func__$0
-                0x3f418484       0x10 esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418488       0x10 esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.__func__$1
-                0x3f418494        0xd esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f4184a1        0x3 
+                0x3f418498        0xd esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f4184a5        0x3 
  .rodata.__func__$2
-                0x3f4184a4       0x11 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f4184b5        0x3 
+                0x3f4184a8       0x11 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f4184b9        0x3 
  .rodata.__func__$3
-                0x3f4184b8        0xd esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f4184c5        0x3 
+                0x3f4184bc        0xd esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f4184c9        0x3 
  .rodata.__func__$5
-                0x3f4184c8       0x11 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f4184d9        0x3 
+                0x3f4184cc       0x11 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f4184dd        0x3 
  .rodata.__func__$6
-                0x3f4184dc        0xa esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f4184e6        0x2 
+                0x3f4184e0        0xa esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f4184ea        0x2 
  .rodata.__func__$7
-                0x3f4184e8       0x13 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f4184fb        0x1 
+                0x3f4184ec       0x13 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f4184ff        0x1 
  .rodata.__func__$8
-                0x3f4184fc        0xc esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f418500        0xc esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.__func__$9
-                0x3f418508       0x10 esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f41850c       0x10 esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.__func__$10
-                0x3f418518       0x13 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f41852b        0x1 
+                0x3f41851c       0x13 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f41852f        0x1 
  .rodata.__func__$11
-                0x3f41852c       0x16 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f418542        0x2 
+                0x3f418530       0x16 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f418546        0x2 
  .rodata.__func__$12
-                0x3f418544       0x12 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f418556        0x2 
+                0x3f418548       0x12 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f41855a        0x2 
  .rodata.__func__$13
-                0x3f418558       0x12 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f41856a        0x2 
+                0x3f41855c       0x12 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f41856e        0x2 
  .rodata.__func__$14
-                0x3f41856c       0x12 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f41857e        0x2 
+                0x3f418570       0x12 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f418582        0x2 
  .rodata.__func__$16
-                0x3f418580        0xa esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f41858a        0x2 
+                0x3f418584        0xa esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f41858e        0x2 
  .rodata.__func__$17
-                0x3f41858c       0x12 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f41859e        0x2 
+                0x3f418590       0x12 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f4185a2        0x2 
  .rodata.__func__$19
-                0x3f4185a0        0x9 esp-idf/heap/libheap.a(tlsf.c.obj)
- *fill*         0x3f4185a9        0x3 
+                0x3f4185a4        0x9 esp-idf/heap/libheap.a(tlsf.c.obj)
+ *fill*         0x3f4185ad        0x3 
  .rodata.__func__$20
-                0x3f4185ac        0xb esp-idf/heap/libheap.a(tlsf.c.obj)
+                0x3f4185b0        0xb esp-idf/heap/libheap.a(tlsf.c.obj)
  .rodata.s_prepare_reserved_regions.str1.4
-                0x3f4185b7      0x105 esp-idf/heap/libheap.a(memory_layout_utils.c.obj)
- *fill*         0x3f4185b7        0x1 
+                0x3f4185bb      0x105 esp-idf/heap/libheap.a(memory_layout_utils.c.obj)
+ *fill*         0x3f4185bb        0x1 
  .rodata.__func__$0
-                0x3f4185b8       0x1b esp-idf/heap/libheap.a(memory_layout_utils.c.obj)
- *fill*         0x3f4185d3        0x1 
+                0x3f4185bc       0x1b esp-idf/heap/libheap.a(memory_layout_utils.c.obj)
+ *fill*         0x3f4185d7        0x1 
  .rodata.soc_memory_region_count
-                0x3f4185d4        0x4 esp-idf/heap/libheap.a(memory_layout.c.obj)
-                0x3f4185d4                soc_memory_region_count
+                0x3f4185d8        0x4 esp-idf/heap/libheap.a(memory_layout.c.obj)
+                0x3f4185d8                soc_memory_region_count
  .rodata.soc_memory_regions
-                0x3f4185d8      0x35c esp-idf/heap/libheap.a(memory_layout.c.obj)
-                0x3f4185d8                soc_memory_regions
+                0x3f4185dc      0x35c esp-idf/heap/libheap.a(memory_layout.c.obj)
+                0x3f4185dc                soc_memory_regions
  .rodata.str1.4
-                0x3f418934       0x27 esp-idf/heap/libheap.a(memory_layout.c.obj)
+                0x3f418938       0x27 esp-idf/heap/libheap.a(memory_layout.c.obj)
  .rodata.soc_memory_types
-                0x3f418934       0x50 esp-idf/heap/libheap.a(memory_layout.c.obj)
-                0x3f418934                soc_memory_types
+                0x3f418938       0x50 esp-idf/heap/libheap.a(memory_layout.c.obj)
+                0x3f418938                soc_memory_types
  .rodata.str1.4
-                0x3f418984      0x121 esp-idf/heap/libheap.a(heap_caps_base.c.obj)
+                0x3f418988      0x121 esp-idf/heap/libheap.a(heap_caps_base.c.obj)
  .rodata.__func__$0
-                0x3f418984       0x17 esp-idf/heap/libheap.a(heap_caps_base.c.obj)
- *fill*         0x3f41899b        0x1 
+                0x3f418988       0x17 esp-idf/heap/libheap.a(heap_caps_base.c.obj)
+ *fill*         0x3f41899f        0x1 
  .rodata.__func__$1
-                0x3f41899c       0x18 esp-idf/heap/libheap.a(heap_caps_base.c.obj)
+                0x3f4189a0       0x18 esp-idf/heap/libheap.a(heap_caps_base.c.obj)
  .rodata.__func__$2
-                0x3f4189b4        0xf esp-idf/heap/libheap.a(heap_caps_base.c.obj)
+                0x3f4189b8        0xf esp-idf/heap/libheap.a(heap_caps_base.c.obj)
  .rodata.esp_cpu_stall.str1.4
-                0x3f4189c3       0x52 esp-idf/esp_hw_support/libesp_hw_support.a(cpu.c.obj)
- *fill*         0x3f4189c3        0x1 
+                0x3f4189c7       0x52 esp-idf/esp_hw_support/libesp_hw_support.a(cpu.c.obj)
+ *fill*         0x3f4189c7        0x1 
  .rodata.__func__$1
-                0x3f4189c4       0x10 esp-idf/esp_hw_support/libesp_hw_support.a(cpu.c.obj)
+                0x3f4189c8       0x10 esp-idf/esp_hw_support/libesp_hw_support.a(cpu.c.obj)
  .rodata.__func__$2
-                0x3f4189d4        0xe esp-idf/esp_hw_support/libesp_hw_support.a(cpu.c.obj)
+                0x3f4189d8        0xe esp-idf/esp_hw_support/libesp_hw_support.a(cpu.c.obj)
  .rodata.find_desc_for_source.str1.4
-                0x3f4189e2       0x39 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+                0x3f4189e6       0x39 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
  .rodata.is_vect_desc_usable.str1.4
-                0x3f4189e2       0x49 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+                0x3f4189e6       0x49 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
  .rodata.esp_intr_alloc_intrstatus.str1.4
-                0x3f4189e2       0xbe esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+                0x3f4189e6       0xbe esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
  .rodata.intr_free_for_current_cpu.str1.4
-                0x3f4189e2        0x4 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
- *fill*         0x3f4189e2        0x2 
+                0x3f4189e6        0x4 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+ *fill*         0x3f4189e6        0x2 
  .rodata.__func__$0
-                0x3f4189e4       0x11 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
- *fill*         0x3f4189f5        0x3 
+                0x3f4189e8       0x11 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+ *fill*         0x3f4189f9        0x3 
  .rodata.__func__$1
-                0x3f4189f8       0x1a esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
- *fill*         0x3f418a12        0x2 
+                0x3f4189fc       0x1a esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+ *fill*         0x3f418a16        0x2 
  .rodata.__func__$2
-                0x3f418a14       0x16 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
- *fill*         0x3f418a2a        0x2 
+                0x3f418a18       0x16 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+ *fill*         0x3f418a2e        0x2 
  .rodata.__func__$3
-                0x3f418a2c       0x19 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
- *fill*         0x3f418a45        0x3 
+                0x3f418a30       0x19 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+ *fill*         0x3f418a49        0x3 
  .rodata.__func__$5
-                0x3f418a48       0x14 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+                0x3f418a4c       0x14 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
  .rodata.__func__$6
-                0x3f418a5c       0x15 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
+                0x3f418a60       0x15 esp-idf/esp_hw_support/libesp_hw_support.a(intr_alloc.c.obj)
  .rodata.periph_module_enable.str1.4
-                0x3f418a71       0x4a esp-idf/esp_hw_support/libesp_hw_support.a(periph_ctrl.c.obj)
- *fill*         0x3f418a71        0x3 
+                0x3f418a75       0x4a esp-idf/esp_hw_support/libesp_hw_support.a(periph_ctrl.c.obj)
+ *fill*         0x3f418a75        0x3 
  .rodata.__func__$0
-                0x3f418a74       0x14 esp-idf/esp_hw_support/libesp_hw_support.a(periph_ctrl.c.obj)
+                0x3f418a78       0x14 esp-idf/esp_hw_support/libesp_hw_support.a(periph_ctrl.c.obj)
  .rodata.__func__$2
-                0x3f418a88       0x15 esp-idf/esp_hw_support/libesp_hw_support.a(periph_ctrl.c.obj)
+                0x3f418a8c       0x15 esp-idf/esp_hw_support/libesp_hw_support.a(periph_ctrl.c.obj)
  .rodata.rtcio_ll_force_hold_disable.str1.4
-                0x3f418a9d       0xdf esp-idf/esp_hw_support/libesp_hw_support.a(sleep_gpio.c.obj)
- *fill*         0x3f418a9d        0x3 
+                0x3f418aa1       0xdf esp-idf/esp_hw_support/libesp_hw_support.a(sleep_gpio.c.obj)
+ *fill*         0x3f418aa1        0x3 
  .rodata.__func__$0
-                0x3f418aa0       0x1c esp-idf/esp_hw_support/libesp_hw_support.a(sleep_gpio.c.obj)
+                0x3f418aa4       0x1c esp-idf/esp_hw_support/libesp_hw_support.a(sleep_gpio.c.obj)
  .rodata.rtc_clk_cal_internal.str1.4
-                0x3f418abc       0xa6 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                0x3f418ac0       0xa6 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
  .rodata.rtc_clk_cal_ratio.str1.4
-                0x3f418abc        0xf esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                0x3f418ac0        0xf esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
  .rodata.rtc_time_get.str1.4
-                0x3f418abc       0x1d esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                0x3f418ac0       0x1d esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
  .rodata.rtc_clk_wait_for_slow_cycle.str1.4
-                0x3f418abc       0x34 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                0x3f418ac0       0x34 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
  .rodata.__func__$1
-                0x3f418abc        0xc esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                0x3f418ac0        0xc esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
  .rodata.__func__$2
-                0x3f418ac8       0x15 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
+                0x3f418acc       0x15 esp-idf/esp_hw_support/libesp_hw_support.a(rtc_time.c.obj)
  .rodata.s_sar_power_release.str1.4
-                0x3f418add       0x4f esp-idf/esp_hw_support/libesp_hw_support.a(sar_periph_ctrl.c.obj)
- *fill*         0x3f418add        0x3 
+                0x3f418ae1       0x4f esp-idf/esp_hw_support/libesp_hw_support.a(sar_periph_ctrl.c.obj)
+ *fill*         0x3f418ae1        0x3 
  .rodata.__func__$0
-                0x3f418ae0       0x14 esp-idf/esp_hw_support/libesp_hw_support.a(sar_periph_ctrl.c.obj)
+                0x3f418ae4       0x14 esp-idf/esp_hw_support/libesp_hw_support.a(sar_periph_ctrl.c.obj)
  .rodata.esp_cpu_intr_get_desc.str1.4
-                0x3f418af4       0x82 esp-idf/esp_hw_support/libesp_hw_support.a(esp_cpu_intr.c.obj)
+                0x3f418af8       0x82 esp-idf/esp_hw_support/libesp_hw_support.a(esp_cpu_intr.c.obj)
  .rodata.__func__$0
-                0x3f418af4       0x16 esp-idf/esp_hw_support/libesp_hw_support.a(esp_cpu_intr.c.obj)
- *fill*         0x3f418b0a        0x2 
+                0x3f418af8       0x16 esp-idf/esp_hw_support/libesp_hw_support.a(esp_cpu_intr.c.obj)
+ *fill*         0x3f418b0e        0x2 
  .rodata.intr_desc_table
-                0x3f418b0c      0x200 esp-idf/esp_hw_support/libesp_hw_support.a(esp_cpu_intr.c.obj)
+                0x3f418b10      0x200 esp-idf/esp_hw_support/libesp_hw_support.a(esp_cpu_intr.c.obj)
  .rodata.main_task.str1.4
-                0x3f418d0c       0xdd esp-idf/freertos/libfreertos.a(app_startup.c.obj)
+                0x3f418d10       0xdd esp-idf/freertos/libfreertos.a(app_startup.c.obj)
  .rodata.esp_startup_start_app.str1.4
-                0x3f418d0c       0x40 esp-idf/freertos/libfreertos.a(app_startup.c.obj)
+                0x3f418d10       0x40 esp-idf/freertos/libfreertos.a(app_startup.c.obj)
  .rodata.__func__$0
-                0x3f418d0c        0xa esp-idf/freertos/libfreertos.a(app_startup.c.obj)
- *fill*         0x3f418d16        0x2 
+                0x3f418d10        0xa esp-idf/freertos/libfreertos.a(app_startup.c.obj)
+ *fill*         0x3f418d1a        0x2 
  .rodata.__func__$1
-                0x3f418d18       0x16 esp-idf/freertos/libfreertos.a(app_startup.c.obj)
+                0x3f418d1c       0x16 esp-idf/freertos/libfreertos.a(app_startup.c.obj)
  .rodata.prvNotifyQueueSetContainer.str1.4
-                0x3f418d2e       0x8f esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32       0x8f esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueGenericReset.str1.4
-                0x3f418d2e       0x2c esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32       0x2c esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueGenericCreateStatic.str1.4
-                0x3f418d2e       0x37 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32       0x37 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueGenericGetStaticBuffers.str1.4
-                0x3f418d2e        0xf esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32        0xf esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueGetMutexHolder.str1.4
-                0x3f418d2e        0xb esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32        0xb esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueCreateCountingSemaphoreStatic.str1.4
-                0x3f418d2e        0x8 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32        0x8 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueGenericSend.str1.4
-                0x3f418d2e       0xfb esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32       0xfb esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.prvInitialiseMutex.str1.4
-                0x3f418d2e       0x3b esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32       0x3b esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueGiveMutexRecursive.str1.4
-                0x3f418d2e        0x8 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32        0x8 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueGiveFromISR.str1.4
-                0x3f418d2e       0x7d esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32       0x7d esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueReceive.str1.4
-                0x3f418d2e       0x66 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32       0x66 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.xQueueReceiveFromISR.str1.4
-                0x3f418d2e       0x52 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d32       0x52 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.uxQueueMessagesWaiting.str1.4
-                0x3f418d2e        0x7 esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418d2e        0x2 
+                0x3f418d32        0x7 esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418d32        0x2 
  .rodata.__func__$2
-                0x3f418d30        0xd esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418d3d        0x3 
+                0x3f418d34        0xd esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418d41        0x3 
  .rodata.__func__$5
-                0x3f418d40       0x17 esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418d57        0x1 
+                0x3f418d44       0x17 esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418d5b        0x1 
  .rodata.__func__$7
-                0x3f418d58       0x15 esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418d6d        0x3 
+                0x3f418d5c       0x15 esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418d71        0x3 
  .rodata.__func__$9
-                0x3f418d70       0x14 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418d74       0x14 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.__func__$10
-                0x3f418d84        0xe esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418d92        0x2 
+                0x3f418d88        0xe esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418d96        0x2 
  .rodata.__func__$11
-                0x3f418d94       0x12 esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418da6        0x2 
+                0x3f418d98       0x12 esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418daa        0x2 
  .rodata.__func__$12
-                0x3f418da8       0x19 esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418dc1        0x3 
+                0x3f418dac       0x19 esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418dc5        0x3 
  .rodata.__func__$13
-                0x3f418dc4       0x1b esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418ddf        0x1 
+                0x3f418dc8       0x1b esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418de3        0x1 
  .rodata.__func__$14
-                0x3f418de0       0x12 esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418df2        0x2 
+                0x3f418de4       0x12 esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418df6        0x2 
  .rodata.__func__$15
-                0x3f418df4       0x1e esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418e12        0x2 
+                0x3f418df8       0x1e esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418e16        0x2 
  .rodata.__func__$16
-                0x3f418e14       0x24 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418e18       0x24 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.__func__$17
-                0x3f418e38       0x19 esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418e51        0x3 
+                0x3f418e3c       0x19 esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418e55        0x3 
  .rodata.__func__$18
-                0x3f418e54       0x19 esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418e6d        0x3 
+                0x3f418e58       0x19 esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418e71        0x3 
  .rodata.__func__$20
-                0x3f418e70       0x15 esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418e85        0x3 
+                0x3f418e74       0x15 esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418e89        0x3 
  .rodata.__func__$21
-                0x3f418e88       0x14 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418e8c       0x14 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.__func__$22
-                0x3f418e9c       0x1e esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418eba        0x2 
+                0x3f418ea0       0x1e esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418ebe        0x2 
  .rodata.__func__$23
-                0x3f418ebc       0x1a esp-idf/freertos/libfreertos.a(queue.c.obj)
- *fill*         0x3f418ed6        0x2 
+                0x3f418ec0       0x1a esp-idf/freertos/libfreertos.a(queue.c.obj)
+ *fill*         0x3f418eda        0x2 
  .rodata.__func__$24
-                0x3f418ed8       0x14 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418edc       0x14 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.__func__$25
-                0x3f418eec       0x13 esp-idf/freertos/libfreertos.a(queue.c.obj)
+                0x3f418ef0       0x13 esp-idf/freertos/libfreertos.a(queue.c.obj)
  .rodata.prvIsYieldRequiredSMP.str1.4
-                0x3f418eff       0x4a esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x4a esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.prvSelectHighestPriorityTaskSMP.str1.4
-                0x3f418eff       0x27 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x27 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.prvDeleteTCB.str1.4
-                0x3f418eff       0x32 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x32 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.prvInitialiseNewTask.str1.4
-                0x3f418eff       0x14 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x14 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.eTaskGetState.str1.4
-                0x3f418eff        0x6 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03        0x6 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskIncrementTick.str1.4
-                0x3f418eff       0x8e esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x8e esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.vTaskPlaceOnEventList.str1.4
-                0x3f418eff        0xc esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03        0xc esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskRemoveFromEventList.str1.4
-                0x3f418eff       0x49 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x49 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.vTaskRemoveFromUnorderedEventList.str1.4
-                0x3f418eff       0x3f esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x3f esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.vTaskSetTimeOutState.str1.4
-                0x3f418eff        0xa esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03        0xa esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskCheckForTimeOut.str1.4
-                0x3f418eff        0xe esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03        0xe esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.vTaskPrioritySet.str1.4
-                0x3f418eff       0x17 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x17 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.vTaskSuspend.str1.4
-                0x3f418eff       0x28 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x28 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskGetStaticBuffers.str1.4
-                0x3f418eff       0x3d esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x3d esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.vTaskDelete.str1.4
-                0x3f418eff       0x7f esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x7f esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskResumeAll.str1.4
-                0x3f418eff       0x7f esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x7f esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskPriorityDisinherit.str1.4
-                0x3f418eff       0x41 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x41 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.vTaskPriorityDisinheritAfterTimeout.str1.4
-                0x3f418eff       0x2b esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x2b esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.ulTaskGenericNotifyTake.str1.4
-                0x3f418eff       0x12 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x12 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskGenericNotify.str1.4
-                0x3f418eff       0x83 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x83 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskIncrementTickOtherCores.str1.4
-                0x3f418eff       0x55 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x55 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskCreatePinnedToCore.str1.4
-                0x3f418eff       0xbc esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0xbc esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskCreateStaticPinnedToCore.str1.4
-                0x3f418eff       0x65 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x65 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.prvCreateIdleTasks.str1.4
-                0x3f418eff        0x5 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03        0x5 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.vTaskStartScheduler.str1.4
-                0x3f418eff       0x12 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f03       0x12 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.xTaskGetIdleTaskHandleForCore.str1.4
-                0x3f418eff       0xbe esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f418eff        0x1 
+                0x3f418f03       0xbe esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f418f03        0x1 
  .rodata.__func__$2
-                0x3f418f00       0x21 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f418f21        0x3 
+                0x3f418f04       0x21 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f418f25        0x3 
  .rodata.__func__$3
-                0x3f418f24       0x1e esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f418f42        0x2 
+                0x3f418f28       0x1e esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f418f46        0x2 
  .rodata.__func__$4
-                0x3f418f44       0x1e esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f418f62        0x2 
+                0x3f418f48       0x1e esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f418f66        0x2 
  .rodata.__func__$5
-                0x3f418f64       0x15 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f418f79        0x3 
+                0x3f418f68       0x15 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f418f7d        0x3 
  .rodata.__func__$6
-                0x3f418f7c       0x18 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418f80       0x18 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.__func__$7
-                0x3f418f94       0x1d esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f418fb1        0x3 
+                0x3f418f98       0x1d esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f418fb5        0x3 
  .rodata.__func__$9
-                0x3f418fb4       0x1e esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f418fd2        0x2 
+                0x3f418fb8       0x1e esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f418fd6        0x2 
  .rodata.__func__$11
-                0x3f418fd4       0x13 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f418fe7        0x1 
+                0x3f418fd8       0x13 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f418feb        0x1 
  .rodata.__func__$13
-                0x3f418fe8       0x18 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f418fec       0x18 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.__func__$14
-                0x3f419000       0x24 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f419004       0x24 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.__func__$15
-                0x3f419024       0x18 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f419028       0x18 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.__func__$17
-                0x3f41903c       0x15 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419051        0x3 
+                0x3f419040       0x15 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f419055        0x3 
  .rodata.__func__$19
-                0x3f419054       0x22 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419076        0x2 
+                0x3f419058       0x22 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f41907a        0x2 
  .rodata.__func__$20
-                0x3f419078       0x19 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419091        0x3 
+                0x3f41907c       0x19 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f419095        0x3 
  .rodata.__func__$22
-                0x3f419094       0x1f esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f4190b3        0x1 
+                0x3f419098       0x1f esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f4190b7        0x1 
  .rodata.__func__$23
-                0x3f4190b4       0x16 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f4190ca        0x2 
+                0x3f4190b8       0x16 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f4190ce        0x2 
  .rodata.__func__$24
-                0x3f4190cc       0x20 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f4190d0       0x20 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.__func__$25
-                0x3f4190ec       0x13 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f4190ff        0x1 
+                0x3f4190f0       0x13 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f419103        0x1 
  .rodata.__func__$28
-                0x3f419100       0x16 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419116        0x2 
+                0x3f419104       0x16 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f41911a        0x2 
  .rodata.__func__$30
-                0x3f419118        0xe esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419126        0x2 
+                0x3f41911c        0xe esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f41912a        0x2 
  .rodata.__func__$31
-                0x3f419128        0xf esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419137        0x1 
+                0x3f41912c        0xf esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f41913b        0x1 
  .rodata.__func__$32
-                0x3f419138       0x14 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f41913c       0x14 esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.__func__$36
-                0x3f41914c        0xd esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419159        0x3 
+                0x3f419150        0xd esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f41915d        0x3 
  .rodata.__func__$37
-                0x3f41915c       0x16 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419172        0x2 
+                0x3f419160       0x16 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f419176        0x2 
  .rodata.__func__$38
-                0x3f419174       0x11 esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419185        0x3 
+                0x3f419178       0x11 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f419189        0x3 
  .rodata.__func__$39
-                0x3f419188        0xe esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f419196        0x2 
+                0x3f41918c        0xe esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f41919a        0x2 
  .rodata.__func__$40
-                0x3f419198        0xb esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f4191a3        0x1 
+                0x3f41919c        0xb esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f4191a7        0x1 
  .rodata.__func__$42
-                0x3f4191a4        0xd esp-idf/freertos/libfreertos.a(tasks.c.obj)
- *fill*         0x3f4191b1        0x3 
+                0x3f4191a8        0xd esp-idf/freertos/libfreertos.a(tasks.c.obj)
+ *fill*         0x3f4191b5        0x3 
  .rodata.__func__$43
-                0x3f4191b4        0xc esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f4191b8        0xc esp-idf/freertos/libfreertos.a(tasks.c.obj)
  .rodata.uxTopUsedPriority
-                0x3f4191c0        0x4 esp-idf/freertos/libfreertos.a(tasks.c.obj)
-                0x3f4191c0                uxTopUsedPriority
+                0x3f4191c4        0x4 esp-idf/freertos/libfreertos.a(tasks.c.obj)
+                0x3f4191c4                uxTopUsedPriority
  .rodata.vPortTaskWrapper.str1.4
-                0x3f4191c4       0x58 esp-idf/freertos/libfreertos.a(port.c.obj)
+                0x3f4191c8       0x58 esp-idf/freertos/libfreertos.a(port.c.obj)
  .rodata.vPortTLSPointersDelCb.str1.4
-                0x3f4191c4       0x72 esp-idf/freertos/libfreertos.a(port.c.obj)
+                0x3f4191c8       0x72 esp-idf/freertos/libfreertos.a(port.c.obj)
  .rodata.pxPortInitialiseStack.str1.4
-                0x3f4191c4       0x65 esp-idf/freertos/libfreertos.a(port.c.obj)
+                0x3f4191c8       0x65 esp-idf/freertos/libfreertos.a(port.c.obj)
  .rodata.vPortAssertIfInISR.str1.4
-                0x3f4191c4       0x19 esp-idf/freertos/libfreertos.a(port.c.obj)
+                0x3f4191c8       0x19 esp-idf/freertos/libfreertos.a(port.c.obj)
  .rodata.xPortEnterCriticalTimeout.str1.4
-                0x3f4191c4       0xef esp-idf/freertos/libfreertos.a(port.c.obj)
+                0x3f4191c8       0xef esp-idf/freertos/libfreertos.a(port.c.obj)
  .rodata.vPortExitCritical.str1.4
-                0x3f4191c4       0x34 esp-idf/freertos/libfreertos.a(port.c.obj)
+                0x3f4191c8       0x34 esp-idf/freertos/libfreertos.a(port.c.obj)
  .rodata.vApplicationStackOverflowHook.str1.4
-                0x3f4191c4       0x3c esp-idf/freertos/libfreertos.a(port.c.obj)
+                0x3f4191c8       0x3c esp-idf/freertos/libfreertos.a(port.c.obj)
  .rodata.__func__$0
-                0x3f4191c4       0x11 esp-idf/freertos/libfreertos.a(port.c.obj)
- *fill*         0x3f4191d5        0x3 
+                0x3f4191c8       0x11 esp-idf/freertos/libfreertos.a(port.c.obj)
+ *fill*         0x3f4191d9        0x3 
  .rodata.__func__$1
-                0x3f4191d8       0x11 esp-idf/freertos/libfreertos.a(port.c.obj)
- *fill*         0x3f4191e9        0x3 
+                0x3f4191dc       0x11 esp-idf/freertos/libfreertos.a(port.c.obj)
+ *fill*         0x3f4191ed        0x3 
  .rodata.__func__$2
-                0x3f4191ec       0x13 esp-idf/freertos/libfreertos.a(port.c.obj)
- *fill*         0x3f4191ff        0x1 
+                0x3f4191f0       0x13 esp-idf/freertos/libfreertos.a(port.c.obj)
+ *fill*         0x3f419203        0x1 
  .rodata.__func__$3
-                0x3f419200       0x16 esp-idf/freertos/libfreertos.a(port.c.obj)
+                0x3f419204       0x16 esp-idf/freertos/libfreertos.a(port.c.obj)
  .rodata.vApplicationGetIdleTaskMemory.str1.4
-                0x3f419216       0x5a esp-idf/freertos/libfreertos.a(port_common.c.obj)
- *fill*         0x3f419216        0x2 
+                0x3f41921a       0x5a esp-idf/freertos/libfreertos.a(port_common.c.obj)
+ *fill*         0x3f41921a        0x2 
  .rodata.__func__$1
-                0x3f419218       0x1e esp-idf/freertos/libfreertos.a(port_common.c.obj)
+                0x3f41921c       0x1e esp-idf/freertos/libfreertos.a(port_common.c.obj)
  .rodata.str1.4
-                0x3f419236       0x91 esp-idf/newlib/libnewlib.a(locks.c.obj)
+                0x3f41923a       0x91 esp-idf/newlib/libnewlib.a(locks.c.obj)
  .rodata.esp_newlib_locks_init.str1.4
-                0x3f419236       0x68 esp-idf/newlib/libnewlib.a(locks.c.obj)
- *fill*         0x3f419236        0x2 
+                0x3f41923a       0x68 esp-idf/newlib/libnewlib.a(locks.c.obj)
+ *fill*         0x3f41923a        0x2 
  .rodata.__func__$4
-                0x3f419238       0x16 esp-idf/newlib/libnewlib.a(locks.c.obj)
- *fill*         0x3f41924e        0x2 
+                0x3f41923c       0x16 esp-idf/newlib/libnewlib.a(locks.c.obj)
+ *fill*         0x3f419252        0x2 
  .rodata.__func__$3
-                0x3f419250       0x13 esp-idf/newlib/libnewlib.a(locks.c.obj)
- *fill*         0x3f419263        0x1 
+                0x3f419254       0x13 esp-idf/newlib/libnewlib.a(locks.c.obj)
+ *fill*         0x3f419267        0x1 
  .rodata.__func__$2
-                0x3f419264       0x15 esp-idf/newlib/libnewlib.a(locks.c.obj)
- *fill*         0x3f419279        0x3 
+                0x3f419268       0x15 esp-idf/newlib/libnewlib.a(locks.c.obj)
+ *fill*         0x3f41927d        0x3 
  .rodata.__func__$1
-                0x3f41927c       0x15 esp-idf/newlib/libnewlib.a(locks.c.obj)
- *fill*         0x3f419291        0x3 
+                0x3f419280       0x15 esp-idf/newlib/libnewlib.a(locks.c.obj)
+ *fill*         0x3f419295        0x3 
  .rodata.__func__$0
-                0x3f419294        0xc esp-idf/newlib/libnewlib.a(locks.c.obj)
+                0x3f419298        0xc esp-idf/newlib/libnewlib.a(locks.c.obj)
  .rodata.esp_newlib_init_global_stdio.str1.4
-                0x3f4192a0        0x6 esp-idf/newlib/libnewlib.a(newlib_init.c.obj)
+                0x3f4192a4        0x6 esp-idf/newlib/libnewlib.a(newlib_init.c.obj)
  .rodata.__esp_system_init_fn_init_newlib_stdio.str1.4
-                0x3f4192a0        0xd esp-idf/newlib/libnewlib.a(newlib_init.c.obj)
+                0x3f4192a4        0xd esp-idf/newlib/libnewlib.a(newlib_init.c.obj)
  .rodata.pthread_cleanup_thread_specific_data_callback.str1.4
-                0x3f4192a0       0x3d esp-idf/pthread/libpthread.a(pthread_local_storage.c.obj)
+                0x3f4192a4       0x3d esp-idf/pthread/libpthread.a(pthread_local_storage.c.obj)
  .rodata.__func__$0
-                0x3f4192a0       0x2e esp-idf/pthread/libpthread.a(pthread_local_storage.c.obj)
+                0x3f4192a4       0x2e esp-idf/pthread/libpthread.a(pthread_local_storage.c.obj)
  .rodata.esp_timer_impl_init_system_time.str1.4
-                0x3f4192ce       0x51 esp-idf/esp_timer/libesp_timer.a(system_time.c.obj)
+                0x3f4192d2       0x51 esp-idf/esp_timer/libesp_timer.a(system_time.c.obj)
  .rodata.str1.4
-                0x3f4192ce      0x108 esp-idf/esp_timer/libesp_timer.a(esp_timer_impl_lac.c.obj)
+                0x3f4192d2      0x108 esp-idf/esp_timer/libesp_timer.a(esp_timer_impl_lac.c.obj)
  .rodata.esp_timer_impl_init.str1.4
-                0x3f4192ce       0xbf esp-idf/esp_timer/libesp_timer.a(esp_timer_impl_lac.c.obj)
- *fill*         0x3f4192ce        0x2 
+                0x3f4192d2       0xbf esp-idf/esp_timer/libesp_timer.a(esp_timer_impl_lac.c.obj)
+ *fill*         0x3f4192d2        0x2 
  .rodata.__func__$2
-                0x3f4192d0       0x1f esp-idf/esp_timer/libesp_timer.a(esp_timer_impl_lac.c.obj)
- *fill*         0x3f4192ef        0x1 
+                0x3f4192d4       0x1f esp-idf/esp_timer/libesp_timer.a(esp_timer_impl_lac.c.obj)
+ *fill*         0x3f4192f3        0x1 
  .rodata.__func__$1
-                0x3f4192f0       0x1c esp-idf/esp_timer/libesp_timer.a(esp_timer_impl_lac.c.obj)
+                0x3f4192f4       0x1c esp-idf/esp_timer/libesp_timer.a(esp_timer_impl_lac.c.obj)
  .rodata.uart_tx_char.str1.4
-                0x3f41930c       0xc1 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+                0x3f419310       0xc1 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
  .rodata.uart_rx_char.str1.4
-                0x3f41930c       0x8e esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+                0x3f419310       0x8e esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
  .rodata.uart_fcntl.str1.4
-                0x3f41930c       0x44 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+                0x3f419310       0x44 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
  .rodata.uart_return_char.str1.4
-                0x3f41930c       0x1d esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+                0x3f419310       0x1d esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
  .rodata.uart_access.str1.4
-                0x3f41930c        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+                0x3f419310        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
  .rodata.uart_vfs_dev_register.str1.4
-                0x3f41930c       0x6b esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+                0x3f419310       0x6b esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
  .rodata.__func__$9
-                0x3f41930c       0x16 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- *fill*         0x3f419322        0x2 
+                0x3f419310       0x16 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ *fill*         0x3f419326        0x2 
  .rodata.__func__$8
-                0x3f419324        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- *fill*         0x3f41932f        0x1 
+                0x3f419328        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ *fill*         0x3f419333        0x1 
  .rodata.__func__$7
-                0x3f419330       0x11 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- *fill*         0x3f419341        0x3 
+                0x3f419334       0x11 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ *fill*         0x3f419345        0x3 
  .rodata.__func__$6
-                0x3f419344        0xa esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- *fill*         0x3f41934e        0x2 
+                0x3f419348        0xa esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ *fill*         0x3f419352        0x2 
  .rodata.__func__$5
-                0x3f419350        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- *fill*         0x3f41935b        0x1 
+                0x3f419354        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ *fill*         0x3f41935f        0x1 
  .rodata.__func__$4
-                0x3f41935c        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- *fill*         0x3f419367        0x1 
+                0x3f419360        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ *fill*         0x3f41936b        0x1 
  .rodata.__func__$3
-                0x3f419368        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- *fill*         0x3f419373        0x1 
+                0x3f41936c        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ *fill*         0x3f419377        0x1 
  .rodata.__func__$2
-                0x3f419374        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- *fill*         0x3f41937f        0x1 
+                0x3f419378        0xb esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ *fill*         0x3f419383        0x1 
  .rodata.__func__$1
-                0x3f419380       0x15 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- *fill*         0x3f419395        0x3 
+                0x3f419384       0x15 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ *fill*         0x3f419399        0x3 
  .rodata.__func__$0
-                0x3f419398       0x14 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+                0x3f41939c       0x14 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
  .rodata.uart_vfs
-                0x3f4193ac       0xa4 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+                0x3f4193b0       0xa4 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
  .rodata.s_uart_mount_points
-                0x3f419450        0xc esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
- .rodata.s_ctx  0x3f41945c        0xc esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+                0x3f419454        0xc esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
+ .rodata.s_ctx  0x3f419460        0xc esp-idf/esp_driver_uart/libesp_driver_uart.a(uart_vfs.c.obj)
  .rodata.uart_reenable_intr_mask.str1.4
-                0x3f419468       0x37 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f41946c       0x37 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.uart_set_word_length.str1.4
-                0x3f419468       0x2f esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f41946c       0x2f esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.uart_set_stop_bits.str1.4
-                0x3f419468       0x2f esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f41946c       0x2f esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.uart_set_baudrate.str1.4
-                0x3f419468       0x30 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f41946c       0x30 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.uart_pattern_pop_pos.str1.4
-                0x3f419468       0x32 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f41946c       0x32 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.uart_wait_tx_done.str1.4
-                0x3f419468       0x98 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f41946c       0x98 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.uart_flush_input.str1.4
-                0x3f419468       0x2e esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f41946c       0x2e esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.__FUNCTION__$36
-                0x3f419468       0x11 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
- *fill*         0x3f419479        0x3 
+                0x3f41946c       0x11 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+ *fill*         0x3f41947d        0x3 
  .rodata.__FUNCTION__$34
-                0x3f41947c       0x1b esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
- *fill*         0x3f419497        0x1 
+                0x3f419480       0x1b esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+ *fill*         0x3f41949b        0x1 
  .rodata.__FUNCTION__$33
-                0x3f419498       0x18 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f41949c       0x18 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.__func__$28
-                0x3f4194b0       0x12 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
- *fill*         0x3f4194c2        0x2 
+                0x3f4194b4       0x12 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+ *fill*         0x3f4194c6        0x2 
  .rodata.__FUNCTION__$27
-                0x3f4194c4       0x12 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
- *fill*         0x3f4194d6        0x2 
+                0x3f4194c8       0x12 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+ *fill*         0x3f4194da        0x2 
  .rodata.__FUNCTION__$7
-                0x3f4194d8       0x12 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
- *fill*         0x3f4194ea        0x2 
+                0x3f4194dc       0x12 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+ *fill*         0x3f4194ee        0x2 
  .rodata.__FUNCTION__$6
-                0x3f4194ec       0x12 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
- *fill*         0x3f4194fe        0x2 
+                0x3f4194f0       0x12 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+ *fill*         0x3f419502        0x2 
  .rodata.__FUNCTION__$5
-                0x3f419500       0x10 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f419504       0x10 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.__FUNCTION__$4
-                0x3f419510       0x10 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f419514       0x10 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.__FUNCTION__$3
-                0x3f419520       0x13 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
- *fill*         0x3f419533        0x1 
+                0x3f419524       0x13 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+ *fill*         0x3f419537        0x1 
  .rodata.__FUNCTION__$2
-                0x3f419534       0x13 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
- *fill*         0x3f419547        0x1 
+                0x3f419538       0x13 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+ *fill*         0x3f41954b        0x1 
  .rodata.__FUNCTION__$1
-                0x3f419548       0x15 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
- *fill*         0x3f41955d        0x3 
+                0x3f41954c       0x15 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+ *fill*         0x3f419561        0x3 
  .rodata.__FUNCTION__$0
-                0x3f419560       0x15 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
+                0x3f419564       0x15 esp-idf/esp_driver_uart/libesp_driver_uart.a(uart.c.obj)
  .rodata.console_open.str1.4
-                0x3f419575        0xc esp-idf/esp_vfs_console/libesp_vfs_console.a(vfs_console.c.obj)
+                0x3f419579        0xc esp-idf/esp_vfs_console/libesp_vfs_console.a(vfs_console.c.obj)
  .rodata.esp_vfs_dev_console_register.str1.4
-                0x3f419575        0xd esp-idf/esp_vfs_console/libesp_vfs_console.a(vfs_console.c.obj)
- *fill*         0x3f419575        0x3 
- .rodata.vfs    0x3f419578       0xa4 esp-idf/esp_vfs_console/libesp_vfs_console.a(vfs_console.c.obj)
+                0x3f419579        0xd esp-idf/esp_vfs_console/libesp_vfs_console.a(vfs_console.c.obj)
+ *fill*         0x3f419579        0x3 
+ .rodata.vfs    0x3f41957c       0xa4 esp-idf/esp_vfs_console/libesp_vfs_console.a(vfs_console.c.obj)
  .rodata.translate_path.str1.4
-                0x3f41961c       0x5f esp-idf/vfs/libvfs.a(vfs.c.obj)
+                0x3f419620       0x5f esp-idf/vfs/libvfs.a(vfs.c.obj)
  .rodata.esp_vfs_register_fd_range.str1.4
-                0x3f41961c        0x1 esp-idf/vfs/libvfs.a(vfs.c.obj)
+                0x3f419620        0x1 esp-idf/vfs/libvfs.a(vfs.c.obj)
  .rodata.__func__$0
-                0x3f41961c        0xf esp-idf/vfs/libvfs.a(vfs.c.obj)
+                0x3f419620        0xf esp-idf/vfs/libvfs.a(vfs.c.obj)
  .rodata.ejecutar_actualizacion_ota.str1.4
-                0x3f41962b       0xcc esp-idf/main/libmain.a(main.c.obj)
+                0x3f41962f       0xcc esp-idf/main/libmain.a(main.c.obj)
  .rodata.tarea_ota_programada.str1.4
-                0x3f41962b       0x51 esp-idf/main/libmain.a(main.c.obj)
+                0x3f41962f       0x51 esp-idf/main/libmain.a(main.c.obj)
  .rodata.iniciar_sntp.str1.4
-                0x3f41962b       0x5f esp-idf/main/libmain.a(main.c.obj)
+                0x3f41962f       0x5f esp-idf/main/libmain.a(main.c.obj)
  .rodata.app_main.str1.4
-                0x3f41962b      0x1ac esp-idf/main/libmain.a(main.c.obj)
- *fill*         0x3f41962b        0x1 
- .rodata        0x3f41962c       0x10 esp-idf/main/libmain.a(main.c.obj)
+                0x3f41962f      0x1b0 esp-idf/main/libmain.a(main.c.obj)
+ *fill*         0x3f41962f        0x1 
+ .rodata        0x3f419630       0x10 esp-idf/main/libmain.a(main.c.obj)
  .rodata.__func__$0
-                0x3f41963c        0x9 esp-idf/main/libmain.a(main.c.obj)
+                0x3f419640        0x9 esp-idf/main/libmain.a(main.c.obj)
  .rodata.wifi_event_handler.str1.4
-                0x3f419645       0xb0 esp-idf/main/libmain.a(wifi_config.c.obj)
- *fill*         0x3f419645        0x3 
- .rodata        0x3f419648       0x78 esp-idf/main/libmain.a(wifi_config.c.obj)
+                0x3f419649       0xb0 esp-idf/main/libmain.a(wifi_config.c.obj)
+ *fill*         0x3f419649        0x3 
+ .rodata        0x3f41964c       0x78 esp-idf/main/libmain.a(wifi_config.c.obj)
  .rodata.start_webserver.str1.4
-                0x3f4196c0        0xd esp-idf/main/libmain.a(wifi_config.c.obj)
+                0x3f4196c4        0xd esp-idf/main/libmain.a(wifi_config.c.obj)
  .rodata.raiz_get_handler.str1.4
-                0x3f4196c0      0x2c4 esp-idf/main/libmain.a(wifi_config.c.obj)
+                0x3f4196c4      0x2c4 esp-idf/main/libmain.a(wifi_config.c.obj)
  .rodata.guardar_post_handler.str1.4
-                0x3f4196c0       0x83 esp-idf/main/libmain.a(wifi_config.c.obj)
+                0x3f4196c4       0x83 esp-idf/main/libmain.a(wifi_config.c.obj)
  .rodata.arrancar_wifi_ap_web.str1.4
-                0x3f4196c0      0x152 esp-idf/main/libmain.a(wifi_config.c.obj)
+                0x3f4196c4      0x152 esp-idf/main/libmain.a(wifi_config.c.obj)
  .rodata.arrancar_wifi_sta.str1.4
-                0x3f4196c0      0x108 esp-idf/main/libmain.a(wifi_config.c.obj)
+                0x3f4196c4      0x108 esp-idf/main/libmain.a(wifi_config.c.obj)
  .rodata.__func__$0
-                0x3f4196c0       0x15 esp-idf/main/libmain.a(wifi_config.c.obj)
+                0x3f4196c4       0x15 esp-idf/main/libmain.a(wifi_config.c.obj)
  .rodata.log_error_if_nonzero.str1.4
-                0x3f4196d5       0x34 esp-idf/main/libmain.a(programa.c.obj)
+                0x3f4196d9       0x34 esp-idf/main/libmain.a(programa.c.obj)
  .rodata.mqtt_app_start.str1.4
-                0x3f4196d5       0x31 esp-idf/main/libmain.a(programa.c.obj)
+                0x3f4196d9       0x31 esp-idf/main/libmain.a(programa.c.obj)
  .rodata.mqtt_event_handler.str1.4
-                0x3f4196d5      0x336 esp-idf/main/libmain.a(programa.c.obj)
+                0x3f4196d9      0x336 esp-idf/main/libmain.a(programa.c.obj)
  .rodata.programa_main.str1.4
-                0x3f4196d5      0x1c6 esp-idf/main/libmain.a(programa.c.obj)
- *fill*         0x3f4196d5        0x3 
- .rodata        0x3f4196d8        0x8 esp-idf/main/libmain.a(programa.c.obj)
+                0x3f4196d9      0x1c6 esp-idf/main/libmain.a(programa.c.obj)
+ *fill*         0x3f4196d9        0x3 
+ .rodata        0x3f4196dc        0x8 esp-idf/main/libmain.a(programa.c.obj)
  .rodata.__func__$0
-                0x3f4196e0        0xe esp-idf/main/libmain.a(programa.c.obj)
+                0x3f4196e4        0xe esp-idf/main/libmain.a(programa.c.obj)
  .rodata.create_string.str1.4
-                0x3f4196ee       0x41 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x41 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_check_cfg_conflict.str1.4
-                0x3f4196ee      0x189 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2      0x189 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.run_event_loop.str1.4
-                0x3f4196ee       0x37 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x37 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_dispatch_event.str1.4
-                0x3f4196ee        0xc esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2        0xc esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_client_create_transport.str1.4
-                0x3f4196ee       0x6c esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x6c esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_set_cert_key_data.str1.4
-                0x3f4196ee        0x5 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2        0x5 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_set_ssl_transport_properties.str1.4
-                0x3f4196ee      0x144 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2      0x144 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_handle_transport_read_error.str1.4
-                0x3f4196ee       0x71 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x71 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_write.str1.4
-                0x3f4196ee       0x83 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x83 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.mqtt_message_receive.str1.4
-                0x3f4196ee       0x95 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x95 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_connect.str1.4
-                0x3f4196ee      0x1fa esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2      0x1fa esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.send_disconnect_msg.str1.4
-                0x3f4196ee       0x79 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x79 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.deliver_suback.str1.4
-                0x3f4196ee       0x36 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x36 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.deliver_publish.str1.4
-                0x3f4196ee       0x77 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x77 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.mqtt_process_receive.str1.4
-                0x3f4196ee      0x1f3 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2      0x1f3 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.mqtt_resend_queued.str1.4
-                0x3f4196ee       0x7d esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x7d esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_client_ping.str1.4
-                0x3f4196ee       0x63 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x63 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.process_keepalive.str1.4
-                0x3f4196ee       0x6a esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x6a esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_task.str1.4
-                0x3f4196ee      0x181 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2      0x181 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.make_publish.str1.4
-                0x3f4196ee       0x3a esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x3a esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_client_set_uri.str1.4
-                0x3f4196ee       0x4a esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x4a esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_set_config.str1.4
-                0x3f4196ee       0xd6 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0xd6 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_client_start.str1.4
-                0x3f4196ee       0x67 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x67 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_client_stop.str1.4
-                0x3f4196ee       0x82 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0x82 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_client_subscribe_multiple.str1.4
-                0x3f4196ee       0xc2 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f2       0xc2 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.esp_mqtt_client_publish.str1.4
-                0x3f4196ee       0x4c esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f4196ee        0x2 
+                0x3f4196f2       0x4c esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f4196f2        0x2 
  .rodata.__func__$0
-                0x3f4196f0       0x10 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4196f4       0x10 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.__func__$1
-                0x3f419700       0x15 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f419715        0x3 
+                0x3f419704       0x15 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f419719        0x3 
  .rodata.__func__$2
-                0x3f419718       0x25 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f41973d        0x3 
+                0x3f41971c       0x25 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f419741        0x3 
  .rodata.__func__$3
-                0x3f419740       0x15 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f419755        0x3 
+                0x3f419744       0x15 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f419759        0x3 
  .rodata.__func__$4
-                0x3f419758       0x11 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f419769        0x3 
+                0x3f41975c       0x11 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f41976d        0x3 
  .rodata.__FUNCTION__$5
-                0x3f41976c       0x26 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f419792        0x2 
+                0x3f419770       0x26 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f419796        0x2 
  .rodata.__FUNCTION__$6
-                0x3f419794       0x21 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f4197b5        0x3 
+                0x3f419798       0x21 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f4197b9        0x3 
  .rodata.__FUNCTION__$7
-                0x3f4197b8       0x18 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f4197bc       0x18 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.__FUNCTION__$8
-                0x3f4197d0       0x13 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f4197e3        0x1 
+                0x3f4197d4       0x13 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f4197e7        0x1 
  .rodata.__FUNCTION__$9
-                0x3f4197e4       0x15 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f4197f9        0x3 
+                0x3f4197e8       0x15 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f4197fd        0x3 
  .rodata.__FUNCTION__$10
-                0x3f4197fc        0xe esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
- *fill*         0x3f41980a        0x2 
+                0x3f419800        0xe esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+ *fill*         0x3f41980e        0x2 
  .rodata.__FUNCTION__$11
-                0x3f41980c       0x14 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
+                0x3f419810       0x14 esp-idf/mqtt/libmqtt.a(mqtt_client.c.obj)
  .rodata.mqtt_msg_connect.str1.4
-                0x3f419820       0x11 esp-idf/mqtt/libmqtt.a(mqtt_msg.c.obj)
+                0x3f419824       0x11 esp-idf/mqtt/libmqtt.a(mqtt_msg.c.obj)
  .rodata.outbox_init.str1.4
-                0x3f419820       0x3d esp-idf/mqtt/libmqtt.a(mqtt_outbox.c.obj)
+                0x3f419824       0x3d esp-idf/mqtt/libmqtt.a(mqtt_outbox.c.obj)
  .rodata.__FUNCTION__$0
-                0x3f419820        0xf esp-idf/mqtt/libmqtt.a(mqtt_outbox.c.obj)
- *fill*         0x3f41982f        0x1 
+                0x3f419824        0xf esp-idf/mqtt/libmqtt.a(mqtt_outbox.c.obj)
+ *fill*         0x3f419833        0x1 
  .rodata.__FUNCTION__$1
-                0x3f419830        0xc esp-idf/mqtt/libmqtt.a(mqtt_outbox.c.obj)
+                0x3f419834        0xc esp-idf/mqtt/libmqtt.a(mqtt_outbox.c.obj)
  .rodata.platform_create_id_string.str1.4
-                0x3f41983c       0x57 esp-idf/mqtt/libmqtt.a(platform_esp32_idf.c.obj)
+                0x3f419840       0x57 esp-idf/mqtt/libmqtt.a(platform_esp32_idf.c.obj)
  .rodata.__FUNCTION__$0
-                0x3f41983c       0x1a esp-idf/mqtt/libmqtt.a(platform_esp32_idf.c.obj)
+                0x3f419840       0x1a esp-idf/mqtt/libmqtt.a(platform_esp32_idf.c.obj)
  .rodata.vfs_spiffs_telldir.str1.4
-                0x3f419856       0x2d esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f41985a       0x2d esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.esp_spiffs_init.str1.4
-                0x3f419856      0x532 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f41985a      0x532 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.vfs_spiffs_update_mtime_value.str1.4
-                0x3f419856       0x34 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f41985a       0x34 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.vfs_spiffs_utime.str1.4
-                0x3f419856        0x5 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f41985a        0x5 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.vfs_spiffs_opendir.str1.4
-                0x3f419856        0x5 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f41985a        0x5 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.vfs_spiffs_rename.str1.4
-                0x3f419856        0x8 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f41985a        0x8 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.vfs_spiffs_stat.str1.4
-                0x3f419856        0x3 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f41985a        0x3 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.esp_vfs_spiffs_register.str1.4
-                0x3f419856       0x10 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f419856        0x2 
+                0x3f41985a       0x10 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f41985a        0x2 
  .rodata.__func__$0
-                0x3f419858       0x10 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f41985c       0x10 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.__func__$1
-                0x3f419868       0x11 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f419879        0x3 
+                0x3f41986c       0x11 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f41987d        0x3 
  .rodata.__func__$2
-                0x3f41987c       0x10 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f419880       0x10 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.__func__$3
-                0x3f41988c       0x12 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f41989e        0x2 
+                0x3f419890       0x12 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f4198a2        0x2 
  .rodata.__func__$4
-                0x3f4198a0       0x12 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f4198b2        0x2 
+                0x3f4198a4       0x12 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f4198b6        0x2 
  .rodata.__func__$5
-                0x3f4198b4       0x13 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f4198c7        0x1 
+                0x3f4198b8       0x13 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f4198cb        0x1 
  .rodata.__func__$6
-                0x3f4198c8       0x13 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f4198db        0x1 
+                0x3f4198cc       0x13 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f4198df        0x1 
  .rodata.__func__$7
-                0x3f4198dc       0x15 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f4198f1        0x3 
+                0x3f4198e0       0x15 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f4198f5        0x3 
  .rodata.__func__$8
-                0x3f4198f4       0x13 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f419907        0x1 
+                0x3f4198f8       0x13 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f41990b        0x1 
  .rodata.__func__$9
-                0x3f419908       0x13 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f41991b        0x1 
+                0x3f41990c       0x13 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f41991f        0x1 
  .rodata.__func__$10
-                0x3f41991c       0x14 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f419920       0x14 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.__func__$11
-                0x3f419930       0x14 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f419934       0x14 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.__func__$12
-                0x3f419944       0x11 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
- *fill*         0x3f419955        0x3 
+                0x3f419948       0x11 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+ *fill*         0x3f419959        0x3 
  .rodata.__func__$13
-                0x3f419958       0x18 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
+                0x3f41995c       0x18 esp-idf/spiffs/libspiffs.a(esp_spiffs.c.obj)
  .rodata.spiffs_api_read.str1.4
-                0x3f419970       0x52 esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
+                0x3f419974       0x52 esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
  .rodata.spiffs_api_write.str1.4
-                0x3f419970       0x4b esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
+                0x3f419974       0x4b esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
  .rodata.spiffs_api_erase.str1.4
-                0x3f419970       0x4b esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
+                0x3f419974       0x4b esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
  .rodata.spiffs_api_check.str1.4
-                0x3f419970       0x3b esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
+                0x3f419974       0x3b esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
  .rodata.str1.4
-                0x3f419970       0x75 esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
+                0x3f419974       0x75 esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
  .rodata.spiffs_check_report_str$0
-                0x3f419970       0x1c esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
+                0x3f419974       0x1c esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
  .rodata.spiffs_check_type_str$1
-                0x3f41998c        0xc esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
+                0x3f419990        0xc esp-idf/spiffs/libspiffs.a(spiffs_api.c.obj)
  .rodata.bme680_get_raw_data.str1.4
-                0x3f419998       0x98 esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
+                0x3f41999c       0x98 esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
  .rodata.bme680_init_desc.str1.4
-                0x3f419998       0x2c esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
+                0x3f41999c       0x2c esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
  .rodata.bme680_force_measurement.str1.4
-                0x3f419998       0x8a esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
+                0x3f41999c       0x8a esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
  .rodata.bme680_get_results_fixed.str1.4
-                0x3f419998       0x5d esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
+                0x3f41999c       0x5d esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
  .rodata.bme680_init_sensor.str1.4
-                0x3f419998       0x3e esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
+                0x3f41999c       0x3e esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
  .rodata.lookup_table
-                0x3f419998       0x80 esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
+                0x3f41999c       0x80 esp-idf/esp-idf-lib__bme680/libesp-idf-lib__bme680.a(bme680.c.obj)
  .rodata.register_device.str1.4
-                0x3f419a18       0x60 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
+                0x3f419a1c       0x60 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
  .rodata.i2c_setup_port.str1.4
-                0x3f419a18      0x2cb esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
+                0x3f419a1c      0x2cb esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
  .rodata.i2c_setup_device.str1.4
-                0x3f419a18      0x360 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
+                0x3f419a1c      0x360 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
  .rodata.i2c_do_operation_with_retry.str1.4
-                0x3f419a18      0x33e esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
+                0x3f419a1c      0x33e esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
  .rodata.i2cdev_init.str1.4
-                0x3f419a18       0x8f esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
+                0x3f419a1c       0x8f esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
  .rodata.i2c_dev_create_mutex.str1.4
-                0x3f419a18      0x169 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
+                0x3f419a1c      0x169 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
  .rodata.i2c_dev_take_mutex.str1.4
-                0x3f419a18       0xa5 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
+                0x3f419a1c       0xa5 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
  .rodata.i2c_dev_give_mutex.str1.4
-                0x3f419a18       0xac esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
+                0x3f419a1c       0xac esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
  .rodata.i2c_dev_write.str1.4
-                0x3f419a18       0xa5 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
+                0x3f419a1c       0xa5 esp-idf/esp-idf-lib__i2cdev/libesp-idf-lib__i2cdev.a(i2cdev.c.obj)
  .rodata.str1.4
-                0x3f419a18       0x23 esp-idf/xtensa/libxtensa.a(xtensa_intr.c.obj)
- *fill*         0x3f419a18        0x8 
+                0x3f419a1c       0x23 esp-idf/xtensa/libxtensa.a(xtensa_intr.c.obj)
+ *fill*         0x3f419a1c        0x4 
  .rodata        0x3f419a20       0x24 esp-idf/xtensa/libxtensa.a(xtensa_vectors.S.obj)
                 0x3f419a20                _xt_coproc_sa_offset
  .rodata.gpio_input_enable.str1.4
