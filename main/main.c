@@ -96,6 +96,7 @@ void app_main(void)
 
         if (conectado) {
             ESP_LOGI(TAG, "WiFi updated conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
+            esp_ota_mark_app_valid_cancel_rollback();
             iniciar_sntp();
 
             vTaskDelay(pdMS_TO_TICKS(5000)); 
