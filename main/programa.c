@@ -35,7 +35,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 static void log_error_if_nonzero(const char *message, int error_code);
 static volatile int periodo_ms = 1000;
 
-void ejecutar_actualizacion_ota();
+extern void ejecutar_actualizacion_ota();
 
 
 
@@ -66,9 +66,11 @@ void programa_main(void)
 		    bme680_t sensor_bme;
 		    memset(&sensor_bme, 0, sizeof(bme680_t));
 		
-		    ESP_ERROR_CHECK(bme680_init_desc(&sensor_bme, BME680_I2C_ADDR_1, 0, 21, 22));
-		
-		    ESP_ERROR_CHECK(bme680_init_sensor(&sensor_bme));
+            ESP_ERROR_CHECK(bme680_init_desc(&sensor_bme, BME680_I2C_ADDR_0, 0, 21, 22));
+
+            if (bme680_init_sensor(&sensor_bme) != ESP_OK) {
+                ESP_LOGE(TAG, "Fallo al inicializar el BME680, pero seguimos vivos!");
+            }
 		    bme680_set_oversampling_rates(&sensor_bme, BME680_OSR_1X, BME680_OSR_1X, BME680_OSR_1X);
 		    bme680_set_filter_size(&sensor_bme, BME680_IIR_SIZE_3);
 			esp_wifi_set_ps(WIFI_PS_MIN_MODEM);
@@ -178,12 +180,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     if (strstr(data, "updateFirmware") != NULL) {
         ESP_LOGI(TAG, "¡Orden de actualización OTA recibida desde ThingsBoard!");
         ejecutar_actualizacion_ota();
-    }
-
-    if (strncmp(event->topic, "v1/devices/me/rpc/request/", 26) == 0) {
-        ejecutar_actualizacion_ota();
-    }
-
+    }   
     const char *id = strrchr(topic, '/');
     if (id != NULL) {
         char resp_topic[128];
@@ -215,26 +212,5 @@ static void log_error_if_nonzero(const char *message, int error_code)
 {
     if (error_code != 0) {
         ESP_LOGE(TAG, "Last error %s: 0x%x", message, error_code);
-    }
-}
-
-void ejecutar_actualizacion_ota() {
-    esp_http_client_config_t conf_client = {
-        .url = "https://github.com/samugc45/sbc_hito6_over_the_air/raw/refs/heads/main/build/app-template.bin",
-        .crt_bundle_attach = esp_crt_bundle_attach, // Usa los certificados integrados de ESP-IDF
-        .keep_alive_enable = true
-    };
-
-    esp_https_ota_config_t conf_ota = {
-        .http_config = &conf_client,
-    };
-
-    esp_err_t err = esp_https_ota(&conf_ota);
-
-    if(err == ESP_OK){
-        ESP_LOGI("OTA","ACTUALIZACION EXITOSA OTA");
-        esp_restart();
-    } else {
-        ESP_LOGE("OTA","FALLO ACTUALIZACION OTA: %s", esp_err_to_name(err));
     }
 }

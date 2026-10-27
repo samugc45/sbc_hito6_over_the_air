@@ -88,9 +88,11 @@ void app_main(void)
         if (conectado) {
             ESP_LOGI(TAG, "WiFi STA conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
             iniciar_sntp();
-             ESP_LOGI(TAG, "BLABLA");
 
-            vTaskDelay(pdMS_TO_TICKS(15000));
+            vTaskDelay(pdMS_TO_TICKS(5000)); 
+
+            xTaskCreate(tarea_ota_programada, "ota_programada", 4096, NULL, 5, NULL);
+
             arrancar_bluetooth();
             programa_main();
 
@@ -101,26 +103,6 @@ void app_main(void)
     }
 }
 
-/* void ejecutar_actualizacion_ota() {
-    esp_http_client_config_t conf_client = {
-        .url = "https://github.com/samugc45/sbc_hito6_over_the_air/raw/refs/heads/main/build/app-template.bin",
-        .cert_pem = ca_cert_pem_start,
-    };
-
-    esp_https_ota_config_t conf_ota = {
-        .http_config = &conf_client,
-    };
-
-    esp_err_t err = esp_https_ota(&conf_ota);
-
-    if(err == ESP_OK){
-        ESP_LOGI("OTA","ACTUALIZACION EXITOSA OTA");
-        esp_restart();
-    } else {
-        ESP_LOGE("OTA","FALLO ACTUALIZACION OTA");
-    }
-}
-*/
 
 void ejecutar_actualizacion_ota() {
     esp_http_client_config_t conf_client = {
