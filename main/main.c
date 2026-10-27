@@ -95,14 +95,14 @@ void app_main(void)
         bool conectado = arrancar_wifi_sta(ssid, password); 
 
         if (conectado) {
-            ESP_LOGI(TAG, "WiFi v3 conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
+            ESP_LOGI(TAG, "WiFi v5 conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
             iniciar_sntp();
 
             vTaskDelay(pdMS_TO_TICKS(5000)); 
 
             xTaskCreate(tarea_ota_programada, "ota_programada", 4096, NULL, 5, NULL);
 
-            arrancar_bluetooth();
+            //arrancar_bluetooth();
             programa_main();
 
         } else {
