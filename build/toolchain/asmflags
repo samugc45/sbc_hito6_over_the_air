@@ -1,0 +1,6 @@
+-Wno-frame-address
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+"-specs=C:/Espressif/frameworks/esp-idf-v5.3.1/RETOS/reto6/build/specs/picolibc.specs"

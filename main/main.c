@@ -86,6 +86,7 @@ void app_main(void)
         if (conectado) {
             ESP_LOGI(TAG, "WiFi STA conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
             iniciar_sntp();
+            vTaskDelay(pdMS_TO_TICKS(3000));
             arrancar_bluetooth();
             ejecutar_actualizacion_ota();
             programa_main();
