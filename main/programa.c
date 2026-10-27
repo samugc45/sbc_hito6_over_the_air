@@ -14,6 +14,8 @@
 #include <stdlib.h>
 #include "esp_wifi.h"
 #include "esp_pm.h"
+#include "esp_crt_bundle.h"
+#include "esp_https_ota.h"
 
 #include "i2cdev.h"
 #include "bme680.h"
@@ -33,7 +35,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 static void log_error_if_nonzero(const char *message, int error_code);
 static volatile int periodo_ms = 1000;
 
-int ejecutar_actualizacion_ota();
+void ejecutar_actualizacion_ota();
 
 
 
@@ -177,6 +179,11 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         ESP_LOGI(TAG, "¡Orden de actualización OTA recibida desde ThingsBoard!");
         ejecutar_actualizacion_ota();
     }
+
+    if (strncmp(event->topic, "v1/devices/me/rpc/request/", 26) == 0) {
+        ejecutar_actualizacion_ota();
+    }
+
     const char *id = strrchr(topic, '/');
     if (id != NULL) {
         char resp_topic[128];
@@ -208,5 +215,26 @@ static void log_error_if_nonzero(const char *message, int error_code)
 {
     if (error_code != 0) {
         ESP_LOGE(TAG, "Last error %s: 0x%x", message, error_code);
+    }
+}
+
+void ejecutar_actualizacion_ota() {
+    esp_http_client_config_t conf_client = {
+        .url = "https://github.com/samugc45/sbc_hito6_over_the_air/raw/refs/heads/main/build/app-template.bin",
+        .crt_bundle_attach = esp_crt_bundle_attach, // Usa los certificados integrados de ESP-IDF
+        .keep_alive_enable = true
+    };
+
+    esp_https_ota_config_t conf_ota = {
+        .http_config = &conf_client,
+    };
+
+    esp_err_t err = esp_https_ota(&conf_ota);
+
+    if(err == ESP_OK){
+        ESP_LOGI("OTA","ACTUALIZACION EXITOSA OTA");
+        esp_restart();
+    } else {
+        ESP_LOGE("OTA","FALLO ACTUALIZACION OTA: %s", esp_err_to_name(err));
     }
 }

@@ -92,7 +92,6 @@ void app_main(void)
 
             vTaskDelay(pdMS_TO_TICKS(15000));
             arrancar_bluetooth();
-            ejecutar_actualizacion_ota();
             programa_main();
 
         } else {
