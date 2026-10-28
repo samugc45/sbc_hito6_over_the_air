@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "app-template",
-    "project_version":    "v1.0.0-23-g623970d-dirty",
+    "project_version":    "v1.0.0-24-ga26a059-dirty",
     "project_path":       "C:/Espressif/frameworks/esp-idf-v5.3.1/RETOS/reto6",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "C:/Espressif/frameworks/esp-idf-v5.3.1/RETOS/reto6/build",

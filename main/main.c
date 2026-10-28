@@ -87,7 +87,7 @@ void app_main(void)
         bool conectado = arrancar_wifi_sta(ssid, password); 
 
         if (conectado) {
-            ESP_LOGI(TAG, "WiFi actualizado conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
+            ESP_LOGI(TAG, "WiFi actualizadov2 conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
             esp_ota_mark_app_valid_cancel_rollback();
             iniciar_sntp();
 

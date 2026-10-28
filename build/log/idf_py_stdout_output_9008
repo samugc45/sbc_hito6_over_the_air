@@ -840,4 +840,128 @@ Temp: 1.97 ºC | Hum: 1.97 % | Pres: -0.00 hPa | Gas: 0.00 Ohm
 [0;32mI (31035) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
 [0;32mI (31045) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
 [0;31mE (31055) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
-[0;33mW (31065) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffb5c
+[0;33mW (31065) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffb5c4c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (31075) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (31075) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb5c4c after permanent error[0m
+[0;33mW (31165) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (31165) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb5c4c, Speed: 1000000 Hz).[0m
+[0;31mE (31165) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (31175) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (31175) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (31185) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (31195) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (31205) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (31215) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffb5c4c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (31225) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (31225) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb5c4c after permanent error[0m
+[0;33mW (31395) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (31395) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb5c4c, Speed: 1000000 Hz).[0m
+[0;31mE (31395) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (31405) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (31405) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (31415) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (31425) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (31435) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (31445) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffb5c4c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (31455) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (31455) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb5c4c after permanent error[0m
+[0;31mE (31465) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (31485) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 1.97 ºC | Hum: 1.97 % | Pres: -0.00 hPa | Gas: 0.00 Ohm
+[0;33mW (31495) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (31505) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (32155) wifi:TX Q not empty: 500, TXQ_BLOCK=0[0m
+[0;33mW (32155) wifi:force witi stop[0m
+[0;32mI (32155) wifi:flush txq[0m
+[0;32mI (32155) wifi:stop sw txq[0m
+[0;32mI (32155) wifi:lmac stop hw txq[0m
+[0;33mW (32155) wifi:sw txq[0] state(1) is not idle[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 28 2026 12:09:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (85) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00010000 00177000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 00190000 00177000[0m
+[0;32mI (107) boot:  5 spiffs           Unknown data     01 82 00307000 00064000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (119) esp_image: segment 0: paddr=00190020 vaddr=3f400020 size=3b4f8h (242936) map[0m
+[0;32mI (211) esp_image: segment 1: paddr=001cb520 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (211) esp_image: segment 2: paddr=001cb52c vaddr=3ffbdb60 size=04aech ( 19180) load[0m
+[0;32mI (224) esp_image: segment 3: paddr=001d0020 vaddr=400d0020 size=b2d48h (732488) map[0m
+[0;32mI (476) esp_image: segment 4: paddr=00282d70 vaddr=3ffc264c size=00cdch (  3292) load[0m
+[0;32mI (477) esp_image: segment 5: paddr=00283a54 vaddr=40080000 size=18a88h (101000) load[0m
+[0;32mI (534) boot: Loaded app from partition at offset 0x190000[0m
+[0;32mI (534) boot: Disabling RNG early entropy source...[0m
+[0;32mI (546) cpu_start: Multicore app[0m
+[0;32mI (554) cpu_start: Pro cpu start user code[0m
+[0;32mI (554) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (555) app_init: Application information:[0m
+[0;32mI (557) app_init: Project name:     app-template[0m
+[0;32mI (563) app_init: App version:      v1.0.0-22-gd6f0896-dirty[0m
+[0;32mI (569) app_init: Compile time:     Oct 28 2026 12:09:49[0m
+[0;32mI (575) app_init: ELF file SHA256:  687ae4584...[0m
+[0;32mI (580) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (586) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (590) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (595) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (600) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (608) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFC7D88 len 00018278 (96 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (632) heap_init: At 40098A88 len 00007578 (29 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;32mI (648) coexist: coex firmware version: 4482466[0m
+[0;32mI (653) main_task: Started on CPU0[0m
+[0;32mI (663) main_task: Calling app_main()[0m
+[0;32mI (713) RETO4: Arrancando en modo Cliente para: SBC[0m
+[0;32mI (723) wifi:wifi driver task: 3ffb9d18, prio:23, stack:6656, core=0[0m
+[0;32mI (733) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (733) wifi:wifi certification version: v7.0[0m
+[0;32mI (733) wifi:config NVS flash: enabled[0m
+[0;32mI (733) wifi:config nano formating: disabled[0m
+[0;32mI (733) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (743) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (743) wifi:Init management short buffer num: 32[0m
+[0;32mI (753) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (753) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (753) wifi:Init static rx buffer num: 10[0m
+[0;32mI (763) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (763) wifi_init: rx ba win: 6[0m
+[0;32mI (773) wifi_init: accept mbox: 6[0m
+[0;32mI (773) wifi_init: tcpip mbox: 32[0m
+[0;32mI (773) wifi_init: udp mbox: 6[0m
+[0;32mI (783) wifi_init: tcp mbox: 6[0m
+[0;32mI (783) wifi_init: tcp tx win: 5760[0m
+[0;32mI (793) wifi_init: tcp rx win: 5760[0m
+[0;32mI (793) wifi_init: tcp mss: 1440[0m
+[0;32mI (793) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (803) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (813) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (883) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (953) wifi:mode : sta (d4:8a:fc:a4:26:40)[0m
+[0;32mI (953) 
