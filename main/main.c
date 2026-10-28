@@ -14,6 +14,8 @@
 #include "driver/gpio.h"
 #include "hal/adc_types.h"
 #include "ssd1306.h"
+#include "driver/I2c.h"
+#include "i2cdev.h"
 
 
 #include "programa.h"

@@ -18,6 +18,7 @@
 #include "esp_https_ota.h"
 
 #include "i2cdev.h"
+#include "driver/I2c.h"
 #include "bme680.h"
 
 
@@ -61,18 +62,18 @@ void programa_main(void)
 			
 			
 					
-		    ESP_ERROR_CHECK(i2cdev_init());
+		  //  ESP_ERROR_CHECK(i2cdev_init());
 		
-		    bme680_t sensor_bme;
-		    memset(&sensor_bme, 0, sizeof(bme680_t));
+		   // bme680_t sensor_bme;
+		   // memset(&sensor_bme, 0, sizeof(bme680_t));
 		
-            ESP_ERROR_CHECK(bme680_init_desc(&sensor_bme, BME680_I2C_ADDR_0, 0, 21, 22));
+           // ESP_ERROR_CHECK(bme680_init_desc(&sensor_bme, BME680_I2C_ADDR_0, 0, 21, 22));
 
-            if (bme680_init_sensor(&sensor_bme) != ESP_OK) {
-                ESP_LOGE(TAG, "Fallo al inicializar el BME680, pero seguimos vivos!");
-            }
-		    bme680_set_oversampling_rates(&sensor_bme, BME680_OSR_1X, BME680_OSR_1X, BME680_OSR_1X);
-		    bme680_set_filter_size(&sensor_bme, BME680_IIR_SIZE_3);
+          //  if (bme680_init_sensor(&sensor_bme) != ESP_OK) {
+           //     ESP_LOGE(TAG, "Fallo al inicializar el BME680, pero seguimos vivos!");
+          //  }
+		    //bme680_set_oversampling_rates(&sensor_bme, BME680_OSR_1X, BME680_OSR_1X, BME680_OSR_1X);
+		  //  bme680_set_filter_size(&sensor_bme, BME680_IIR_SIZE_3);
 			esp_wifi_set_ps(WIFI_PS_MIN_MODEM);
         while(1){
             char caja1[128];
@@ -80,18 +81,18 @@ void programa_main(void)
             char mensaje[256];
             char mensaje2[64];
 
-	        bme680_values_float_t valores;
-	        uint32_t duracion;
+	       // bme680_values_float_t valores;
+	     //   uint32_t duracion;
 	
-	        bme680_get_measurement_duration(&sensor_bme, &duracion);
+	      //  bme680_get_measurement_duration(&sensor_bme, &duracion);
 	
-	        if (bme680_force_measurement(&sensor_bme) == ESP_OK) {
+	       /* if (bme680_force_measurement(&sensor_bme) == ESP_OK) {
 	            vTaskDelay(duracion); 
 	
 	            if (bme680_get_results_float(&sensor_bme, &valores) == ESP_OK) {
 	                printf("Temperatura: %.2f ºC\n", valores.temperature);
 	            }
-	        }
+	        }*/
             int valor_ldr = 0;
             adc_oneshot_read(adc1_handle, ADC1_CHANNEL_6, &valor_ldr);
             
@@ -104,9 +105,10 @@ void programa_main(void)
             sprintf(caja1,"LDR Bruto: %d ", valor_ldr);
             sprintf(caja2,"Digito: %d", valor);
 		            
-		    printf("Temp: %.2f ºC | Hum: %.2f %% | Pres: %.2f hPa | Gas: %.2f Ohm\n",valores.temperature, valores.humidity, valores.pressure, valores.gas_resistance);
-		
-			sprintf(mensaje, "{\"ldr\": %d, \"temperatura\": %.2f, \"humedad\": %.2f, \"presion\": %.2f, \"gas\": %.2f}",valor_ldr, valores.temperature, valores.humidity, valores.pressure, valores.gas_resistance);
+		   // printf("Temp: %.2f ºC | Hum: %.2f %% | Pres: %.2f hPa | Gas: %.2f Ohm\n",valores.temperature, valores.humidity, valores.pressure, valores.gas_resistance);
+		//	sprintf(mensaje, "{\"ldr\": %d, \"temperatura\": %.2f, \"humedad\": %.2f, \"presion\": %.2f, \"gas\": %.2f}",valor_ldr, valores.temperature, valores.humidity, valores.pressure, valores.gas_resistance);
+
+			sprintf(mensaje, "{\"ldr\": %d}",valor_ldr);
 		    esp_mqtt_client_publish(client, "v1/devices/me/telemetry", mensaje, 0, 0, 0);
 
 
