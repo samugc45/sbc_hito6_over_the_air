@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/BRUNO/Desktop/reto6/sbc_hito6_over_the_air/components/ssd1306
+# Install script for directory: C:/Espressif/frameworks/esp-idf-v5.3.1/RETOS/reto6/components/ssd1306
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
