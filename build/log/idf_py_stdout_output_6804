@@ -1,0 +1,8 @@
+esptool.py v4.12.0
+Serial port COM3
+
+A fatal error occurred: Could not open COM3, the port is busy or doesn't exist.
+(could not open port 'COM3': FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado.', None, 2))
+
+Hint: Check if the port is correct and ESP connected
+

@@ -1,0 +1,844 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 28 2026 12:09:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (85) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00010000 00177000[0m
+[0;32mI (100) boot:  4 ota_1            OTA app          00 11 00190000 00177000[0m
+[0;32mI (107) boot:  5 spiffs           Unknown data     01 82 00307000 00064000[0m
+[0;32mI (115) boot: End of partition table[0m
+[0;32mI (119) boot: No factory image, trying OTA 0[0m
+[0;32mI (124) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=41208h (266760) map[0m
+[0;32mI (224) esp_image: segment 1: paddr=00051230 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (224) esp_image: segment 2: paddr=0005123c vaddr=3ffbdb60 size=05dd8h ( 24024) load[0m
+[0;32mI (239) esp_image: segment 3: paddr=0005701c vaddr=40080000 size=08ffch ( 36860) load[0m
+[0;32mI (253) esp_image: segment 4: paddr=00060020 vaddr=400d0020 size=d8d90h (888208) map[0m
+[0;32mI (558) esp_image: segment 5: paddr=00138db8 vaddr=40088ffc size=15b68h ( 88936) load[0m
+[0;32mI (608) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (614) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (614) boot: Disabling RNG early entropy source...[0m
+[0;32mI (626) cpu_start: Multicore app[0m
+[0;32mI (634) cpu_start: Pro cpu start user code[0m
+[0;32mI (634) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (634) app_init: Application information:[0m
+[0;32mI (637) app_init: Project name:     app-template[0m
+[0;32mI (643) app_init: App version:      v1.0.0-23-g623970d-dirty[0m
+[0;32mI (649) app_init: Compile time:     Oct 28 2026 12:12:34[0m
+[0;32mI (655) app_init: ELF file SHA256:  adc5b8892...[0m
+[0;32mI (660) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (666) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (670) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (675) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (680) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (687) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (693) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (699) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (706) heap_init: At 3FFCA548 len 00015AB8 (86 KiB): DRAM[0m
+[0;32mI (712) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (718) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (724) heap_init: At 4009EB64 len 0000149C (5 KiB): IRAM[0m
+[0;32mI (732) spi_flash: detected chip: generic[0m
+[0;32mI (735) spi_flash: flash io: dio[0m
+[0;32mI (740) coexist: coex firmware version: 4482466[0m
+[0;32mI (745) main_task: Started on CPU0[0m
+[0;32mI (755) main_task: Calling app_main()[0m
+[0;32mI (805) RETO4: Arrancando en modo Cliente para: SBC[0m
+[0;32mI (815) wifi:wifi driver task: 3ffd0244, prio:23, stack:6656, core=0[0m
+[0;32mI (825) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (825) wifi:wifi certification version: v7.0[0m
+[0;32mI (825) wifi:config NVS flash: enabled[0m
+[0;32mI (825) wifi:config nano formating: disabled[0m
+[0;32mI (825) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (835) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (835) wifi:Init management short buffer num: 32[0m
+[0;32mI (845) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (845) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (845) wifi:Init static rx buffer num: 10[0m
+[0;32mI (855) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (855) wifi_init: rx ba win: 6[0m
+[0;32mI (865) wifi_init: accept mbox: 6[0m
+[0;32mI (865) wifi_init: tcpip mbox: 32[0m
+[0;32mI (865) wifi_init: udp mbox: 6[0m
+[0;32mI (875) wifi_init: tcp mbox: 6[0m
+[0;32mI (875) wifi_init: tcp tx win: 5760[0m
+[0;32mI (885) wifi_init: tcp rx win: 5760[0m
+[0;32mI (885) wifi_init: tcp mss: 1440[0m
+[0;32mI (885) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (895) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (905) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (985) wifi:mode : sta (d4:8a:fc:a4:26:40)[0m
+[0;32mI (985) wifi:enable tsf[0m
+[0;32mI (985) WIFI_CONFIG: wifi_init_sta terminado. Esperando conexión...[0m
+[0;32mI (995) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (995) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1005) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1005) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1015) wifi:<ba-add>idx:0 (ifx:0, 70:4d:7b:60:50:08), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1035) wifi:connected with SBC, aid = 1, channel 6, BW20, bssid = 70:4d:7b:60:50:08[0m
+[0;32mI (1035) wifi:security: WPA2-PSK, phy: bgn, rssi: -66[0m
+[0;32mI (1045) wifi:pm start, type: 1[0m
+
+[0;32mI (1045) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1055) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (2555) esp_netif_handlers: sta ip: 192.168.1.47, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2555) WIFI_CONFIG: Conectado. IP obtenida: 192.168.1.47[0m
+[0;32mI (2555) WIFI_CONFIG: Conexión exitosa al SSID:SBC[0m
+[0;32mI (2565) RETO4: WiFi updated5 conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones[0m
+[0;32mI (2575) RETO4: Iniciando SNTP[0m
+[0;32mI (7575) OTA: ¡Son las 12:00! Ejecutando actualización programada...[0m
+[0;32mI (7575) BLE: Arrancando modulo Bluetooth...[0m
+[0;32mI (7575) BTDM_INIT: BT controller compile version [b022216][0m
+[0;32mI (7585) BTDM_INIT: Bluetooth MAC: d4:8a:fc:a4:26:42[0m
+[0;32mI (7845) RETO 6: Other event id:7[0m
+[0;32mI (7875) i2cdev: [Port 0] First initialization. Configuring bus with SDA=21, SCL=22 (Pullups SCL:0 SDA:0)[0m
+[0;33mW (7875) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (7885) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7895) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7905) i2cdev: [Port 0] Successfully installed I2C master bus (Handle: 0x3ffebcf8).[0m
+[0;32mI (7915) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffebaf0, Speed: 1000000 Hz).[0m
+[0;32mI (7875) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (7935) BLE: Mi nombre Bluetooth sera: esp2640[0m
+[0;31mE (7935) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (7945) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (7945) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (7955) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (7965) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (7975) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (7985) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffebaf0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (7995) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (7995) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffebaf0 after permanent error[0m
+[0;32mI (7965) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (8015) NimBLE: disc_mode=2[0m
+[0;32mI (8015) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (8025) NimBLE: 
+[0m
+[0;33mW (8045) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (8045) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfce4, Speed: 1000000 Hz).[0m
+[0;31mE (8045) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (8055) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (8055) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (8065) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8075) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (8085) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (8095) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffdfce4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (8105) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (8115) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfce4 after permanent error[0m
+[0;33mW (8195) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (8195) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe3ad8, Speed: 1000000 Hz).[0m
+[0;31mE (8195) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (8205) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (8205) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (8215) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8225) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (8235) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (8245) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffe3ad8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (8255) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (8255) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe3ad8 after permanent error[0m
+[0;33mW (8425) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (8425) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe1f14, Speed: 1000000 Hz).[0m
+[0;31mE (8425) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (8435) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (8435) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (8445) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8455) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (8465) i2c.master: i2c_master_transmit(1074): I2C transaction failed[0m
+[0;33mW (8475) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffe1f14): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (8485) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (8485) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe1f14 after permanent error[0m
+[0;31mE (8495) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (8505) RETO 6: Fallo al inicializar el BME680, pero seguimos vivos![0m
+[0;32mI (8515) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe1f14, Speed: 1000000 Hz).[0m
+[0;31mE (8525) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (8535) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (8535) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (8545) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8555) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (8565) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (8575) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffe1f14): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (8585) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (8585) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe1f14 after permanent error[0m
+[0;33mW (8735) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (8745) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe3ad8, Speed: 1000000 Hz).[0m
+[0;31mE (8745) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (8755) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (8765) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (8765) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8775) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (8785) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (8795) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffe3ad8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (8805) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (8815) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe3ad8 after permanent error[0m
+[0;33mW (8905) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (8905) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe3ad8, Speed: 1000000 Hz).[0m
+[0;31mE (8905) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (8915) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (8915) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (8925) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8935) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (8945) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (8955) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffe3ad8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (8965) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (8965) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe3ad8 after permanent error[0m
+[0;33mW (9135) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (9135) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe3c94, Speed: 1000000 Hz).[0m
+[0;31mE (9135) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (9145) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (9145) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (9155) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9165) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9175) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (9185) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffe3c94): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9195) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9195) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe3c94 after permanent error[0m
+[0;31mE (9205) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;32mI (9215) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (9225) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfbe0, Speed: 1000000 Hz).[0m
+[0;31mE (9235) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (9245) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (9245) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (9255) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9265) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9275) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (9285) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffdfbe0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9295) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9295) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfbe0 after permanent error[0m
+[0;33mW (9345) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (9345) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffe1ed4, Speed: 1000000 Hz).[0m
+[0;31mE (9345) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (9345) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (9355) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (9365) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9375) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9385) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (9395) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffe1ed4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9405) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9405) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffe1ed4 after permanent error[0m
+[0;33mW (9495) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (9495) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfcbc, Speed: 1000000 Hz).[0m
+[0;31mE (9495) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (9505) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (9505) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (9515) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9525) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9535) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (9545) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffdfcbc): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9555) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9555) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfcbc after permanent error[0m
+[0;33mW (9725) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (9725) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfaa8, Speed: 1000000 Hz).[0m
+[0;31mE (9725) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (9735) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (9735) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (9745) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9755) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9765) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (9775) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffdfaa8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9785) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9785) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfaa8 after permanent error[0m
+[0;31mE (9795) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;32mI (9815) wifi:Set ps type: 1, coexist: 1[0m
+
+[0;32mI (9815) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfbf0, Speed: 1000000 Hz).[0m
+[0;31mE (9825) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (9825) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (9835) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (9845) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9855) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9865) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (9865) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffdfbf0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9875) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9885) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfbf0 after permanent error[0m
+[0;33mW (9935) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (9935) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfc98, Speed: 1000000 Hz).[0m
+[0;31mE (9935) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (9945) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (9945) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (9955) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9965) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9975) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (9985) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffdfc98): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (9995) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (9995) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfc98 after permanent error[0m
+[0;33mW (10095) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (10095) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfd04, Speed: 1000000 Hz).[0m
+[0;31mE (10095) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (10105) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (10105) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (10115) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10125) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (10135) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (10145) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffdfd04): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (10155) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (10155) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfd04 after permanent error[0m
+[0;33mW (10345) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (10345) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf0a0, Speed: 1000000 Hz).[0m
+[0;31mE (10345) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (10355) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (10355) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (10365) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10375) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (10385) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (10395) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffdf0a0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (10405) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (10405) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf0a0 after permanent error[0m
+[0;31mE (10425) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (10435) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (10535) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (10575) RETO 6: MQTT_EVENT_CONNECTED[0m
+[0;32mI (10895) RETO 6: MQTT_EVENT_SUBSCRIBED, msg_id=37328[0m
+[0;32mI (10895) RETO 6: sent publish successful, msg_id=0[0m
+[0;32mI (11315) esp_https_ota: Starting OTA...[0m
+[0;32mI (11315) esp_https_ota: Writing to partition subtype 17 at offset 0x190000[0m
+[0;32mI (11595) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd881c, Speed: 1000000 Hz).[0m
+[0;31mE (11595) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (11595) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (11605) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (11615) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11625) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (11635) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (11645) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffd881c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (11645) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (11655) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd881c after permanent error[0m
+[0;33mW (11735) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (11735) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd881c, Speed: 1000000 Hz).[0m
+[0;31mE (11765) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (11765) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (11775) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (11775) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11785) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (11795) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (11805) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd881c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (11815) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (11825) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd881c after permanent error[0m
+[0;33mW (11925) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (11925) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd881c, Speed: 1000000 Hz).[0m
+[0;31mE (11955) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (11955) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (11955) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (11965) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (11975) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (11985) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (11995) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffd881c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (12005) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (12015) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd881c after permanent error[0m
+[0;33mW (12185) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (12185) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd881c, Speed: 1000000 Hz).[0m
+[0;31mE (12185) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (12195) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (12195) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (12205) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (12215) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (12225) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (12235) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd881c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (12245) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (12245) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd881c after permanent error[0m
+[0;31mE (12275) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (12275) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (13375) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfdc8, Speed: 1000000 Hz).[0m
+[0;31mE (13375) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (13395) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (13395) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (13395) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13405) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (13415) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (13425) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffdfdc8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (13435) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (13445) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfdc8 after permanent error[0m
+[0;33mW (13495) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (13515) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf2e4, Speed: 1000000 Hz).[0m
+[0;31mE (13545) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (13545) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (13575) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (13575) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13585) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (13595) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (13595) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffdf2e4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (13605) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (13615) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf2e4 after permanent error[0m
+[0;33mW (13725) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (13725) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf7b0, Speed: 1000000 Hz).[0m
+[0;31mE (13725) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (13755) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (13755) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (13785) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13785) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (13805) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (13805) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffdf7b0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (13815) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (13815) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf7b0 after permanent error[0m
+[0;33mW (14005) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (14005) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf2e4, Speed: 1000000 Hz).[0m
+[0;31mE (14015) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (14015) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (14025) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (14035) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14045) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (14055) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (14055) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffdf2e4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (14065) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (14105) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf2e4 after permanent error[0m
+[0;31mE (14135) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (14165) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (15225) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfdc8, Speed: 1000000 Hz).[0m
+[0;31mE (15225) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (15235) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (15235) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (15245) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15255) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (15265) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (15275) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffdfdc8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (15285) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (15295) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfdc8 after permanent error[0m
+[0;33mW (15345) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (15345) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf2e4, Speed: 1000000 Hz).[0m
+[0;31mE (15345) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (15365) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (15375) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (15375) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15405) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (15435) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (15435) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffdf2e4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (15445) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (15455) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf2e4 after permanent error[0m
+[0;33mW (15545) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (15555) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf2e4, Speed: 1000000 Hz).[0m
+[0;31mE (15585) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (15585) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (15585) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (15615) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15615) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (15645) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (15645) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffdf2e4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (15655) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (15665) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf2e4 after permanent error[0m
+[0;33mW (15845) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (15845) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd881c, Speed: 1000000 Hz).[0m
+[0;31mE (15865) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (15865) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (15865) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (15875) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15885) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (15895) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (15895) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd881c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (15915) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (15915) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd881c after permanent error[0m
+[0;31mE (15945) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (15965) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (17075) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf7c4, Speed: 1000000 Hz).[0m
+[0;31mE (17075) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (17085) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (17085) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (17095) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17105) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (17115) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (17125) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffdf7c4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (17135) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (17155) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf7c4 after permanent error[0m
+[0;33mW (17215) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (17215) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf7c4, Speed: 1000000 Hz).[0m
+[0;31mE (17215) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (17245) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (17245) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (17275) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17275) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (17285) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (17295) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffdf7c4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (17305) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (17315) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf7c4 after permanent error[0m
+[0;33mW (17425) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (17425) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfdc8, Speed: 1000000 Hz).[0m
+[0;31mE (17455) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (17455) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (17455) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (17485) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17485) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (17505) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (17505) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffdfdc8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (17515) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (17515) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfdc8 after permanent error[0m
+[0;33mW (17695) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (17695) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfdc8, Speed: 1000000 Hz).[0m
+[0;31mE (17695) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (17715) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (17715) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (17715) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (17725) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (17735) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (17745) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffdfdc8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (17825) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (17825) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfdc8 after permanent error[0m
+[0;31mE (17825) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (17855) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (18925) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf7e4, Speed: 1000000 Hz).[0m
+[0;31mE (18925) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (18935) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (18935) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (18945) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (18955) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (18965) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (18975) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffdf7e4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (18985) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (19055) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf7e4 after permanent error[0m
+[0;33mW (19115) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (19115) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfdc8, Speed: 1000000 Hz).[0m
+[0;31mE (19125) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (19125) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (19135) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (19145) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (19155) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (19155) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (19165) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffdfdc8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (19185) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (19185) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfdc8 after permanent error[0m
+[0;33mW (19275) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (19275) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf7d0, Speed: 1000000 Hz).[0m
+[0;31mE (19275) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (19285) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (19305) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (19305) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (19335) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (19335) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (19345) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffdf7d0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (19355) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (19365) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf7d0 after permanent error[0m
+[0;33mW (19545) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (19545) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfdc8, Speed: 1000000 Hz).[0m
+[0;31mE (19545) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (19575) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (19575) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (19605) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (19605) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (19635) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (19635) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffdfdc8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (19655) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (19655) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfdc8 after permanent error[0m
+[0;31mE (19665) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (19675) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (20705) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd881c, Speed: 1000000 Hz).[0m
+[0;31mE (20705) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (20705) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (20715) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (20725) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (20735) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (20735) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (20745) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffd881c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (20765) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (20795) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd881c after permanent error[0m
+[0;33mW (20855) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (20855) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd881c, Speed: 1000000 Hz).[0m
+[0;31mE (20875) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (20875) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (20875) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (20885) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (20895) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (20905) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (20915) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd881c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (20925) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (20925) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd881c after permanent error[0m
+[0;33mW (21035) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (21035) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf7f0, Speed: 1000000 Hz).[0m
+[0;31mE (21065) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (21065) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (21065) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (21075) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (21085) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (21095) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (21095) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffdf7f0): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (21105) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (21115) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf7f0 after permanent error[0m
+[0;33mW (21285) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (21285) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd881c, Speed: 1000000 Hz).[0m
+[0;31mE (21285) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (21295) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (21295) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (21305) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (21315) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (21325) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (21335) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffd881c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (21385) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (21385) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd881c after permanent error[0m
+[0;31mE (21415) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (21415) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (22495) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf974, Speed: 1000000 Hz).[0m
+[0;31mE (22495) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (22495) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (22515) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (22515) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22525) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (22535) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (22545) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffdf974): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (22555) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (22565) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf974 after permanent error[0m
+[0;33mW (22635) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (22635) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfd44, Speed: 1000000 Hz).[0m
+[0;31mE (22635) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (22665) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (22665) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (22695) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22695) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (22715) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (22715) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffdfd44): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (22725) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (22725) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfd44 after permanent error[0m
+[0;33mW (22825) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (22825) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfd44, Speed: 1000000 Hz).[0m
+[0;31mE (22825) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (22855) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (22855) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (22855) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (22885) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (22885) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (22915) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffdfd44): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (22915) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (22925) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfd44 after permanent error[0m
+[0;33mW (23105) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (23105) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfd64, Speed: 1000000 Hz).[0m
+[0;31mE (23105) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (23125) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (23125) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (23135) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23145) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (23155) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (23155) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffdfd64): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (23175) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (23185) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfd64 after permanent error[0m
+[0;31mE (23225) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (23225) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (24255) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfdc8, Speed: 1000000 Hz).[0m
+[0;31mE (24285) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (24285) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (24285) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (24315) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24315) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (24345) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (24345) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffdfdc8): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (24355) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (24365) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfdc8 after permanent error[0m
+[0;33mW (24415) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (24415) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffd881c, Speed: 1000000 Hz).[0m
+[0;31mE (24415) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (24425) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (24455) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (24455) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24485) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (24485) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (24515) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffd881c): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (24515) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (24545) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffd881c after permanent error[0m
+[0;33mW (24625) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (24665) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdfd30, Speed: 1000000 Hz).[0m
+[0;31mE (24665) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (24695) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (24695) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (24695) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24725) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (24755) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (24755) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffdfd30): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (24775) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (24775) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdfd30 after permanent error[0m
+[0;33mW (24955) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (24975) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffdf2e4, Speed: 1000000 Hz).[0m
+[0;31mE (25005) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (25005) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (25005) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (25035) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (25035) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (25065) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (25065) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffdf2e4): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;32mI (25075) esp_image: segment 0: paddr=00190020 vaddr=3f400020 size=3b4f8h (242936) map[0m
+[0;33mW (25075) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (25095) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffdf2e4 after permanent error[0m
+[0;31mE (25105) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (25115) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;32mI (25175) esp_image: segment 1: paddr=001cb520 vaddr=3ff80000 size=00004h (     4) [0m
+[0;32mI (25175) esp_image: segment 2: paddr=001cb52c vaddr=3ffbdb60 size=04aech ( 19180) [0m
+[0;32mI (25185) esp_image: segment 3: paddr=001d0020 vaddr=400d0020 size=b2d48h (732488) map[0m
+[0;32mI (25435) esp_image: segment 4: paddr=00282d70 vaddr=3ffc264c size=00cdch (  3292) [0m
+[0;32mI (25445) esp_image: segment 5: paddr=00283a54 vaddr=40080000 size=18a88h (101000) [0m
+[0;32mI (25485) esp_image: segment 0: paddr=00190020 vaddr=3f400020 size=3b4f8h (242936) map[0m
+[0;32mI (25575) esp_image: segment 1: paddr=001cb520 vaddr=3ff80000 size=00004h (     4) [0m
+[0;32mI (25585) esp_image: segment 2: paddr=001cb52c vaddr=3ffbdb60 size=04aech ( 19180) [0m
+[0;32mI (25595) esp_image: segment 3: paddr=001d0020 vaddr=400d0020 size=b2d48h (732488) map[0m
+[0;32mI (25845) esp_image: segment 4: paddr=00282d70 vaddr=3ffc264c size=00cdch (  3292) [0m
+[0;32mI (25845) esp_image: segment 5: paddr=00283a54 vaddr=40080000 size=18a88h (101000) [0m
+[0;32mI (25895) OTA: ACTUALIZACION EXITOSA OTA[0m
+[0;32mI (25895) wifi:state: run -> init (0x0)[0m
+[0;32mI (25905) wifi:pm stop, total sleep time: 13259756 us / 24860629 us[0m
+
+[0;32mI (25905) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (25905) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[1;31mE (25915) wifi:NAN WiFi stop[0m
+[0;32mI (25915) WIFI_CONFIG: Reintentando conectar al AP...[0m
+[0;31mE (25915) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 55[0m
+[0;32mI (25915) WIFI_CONFIG: Fallo al conectar al AP[0m
+[0;31mE (25925) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (25945) RETO 6: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (26145) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb5c38, Speed: 1000000 Hz).[0m
+[0;31mE (26145) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (26145) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (26155) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (26165) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (26165) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (26175) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (26185) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffb5c38): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (26195) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (26205) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb5c38 after permanent error[0m
+[0;33mW (26255) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (26255) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb5c38, Speed: 1000000 Hz).[0m
+[0;31mE (26255) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (26265) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (26265) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (26275) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (26285) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (26295) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (26305) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffb5c38): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (26315) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (26315) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb5c38 after permanent error[0m
+[0;33mW (26405) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (26405) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb5c38, Speed: 1000000 Hz).[0m
+[0;31mE (26405) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (26415) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (26415) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (26425) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (26435) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (26445) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (26455) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffb5c38): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (26465) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (26465) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb5c38 after permanent error[0m
+[0;33mW (26635) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (26635) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb5c38, Speed: 1000000 Hz).[0m
+[0;31mE (26635) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (26645) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (26645) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (26655) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (26665) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (26675) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (26685) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffb5c38): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (26695) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (26695) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb5c38 after permanent error[0m
+[0;31mE (26705) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (26725) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;33mW (26735) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (26745) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (27755) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb6328, Speed: 1000000 Hz).[0m
+[0;31mE (27755) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (27755) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (27765) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (27765) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (27775) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (27785) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (27795) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffb6328): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (27805) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (27815) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb6328 after permanent error[0m
+[0;33mW (27865) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (27865) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb6328, Speed: 1000000 Hz).[0m
+[0;31mE (27865) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (27875) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (27875) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (27885) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (27895) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (27905) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (27915) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffb6328): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (27925) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (27925) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb6328 after permanent error[0m
+[0;33mW (28015) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (28015) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb6328, Speed: 1000000 Hz).[0m
+[0;31mE (28015) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (28025) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (28025) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (28035) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (28045) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (28055) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (28065) i2cdev: [0x76 at 0] I2C op failed (Try 2, Handle 0x3ffb6328): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (28075) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (28075) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb6328 after permanent error[0m
+[0;33mW (28245) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (28245) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb6328, Speed: 1000000 Hz).[0m
+[0;31mE (28245) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (28255) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (28255) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (28265) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (28275) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (28285) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (28295) i2cdev: [0x76 at 0] I2C op failed (Try 3, Handle 0x3ffb6328): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (28305) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (28305) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb6328 after permanent error[0m
+[0;31mE (28315) i2cdev: [0x76 at 0] I2C operation failed after 4 retries. Last error: 259 (ESP_ERR_INVALID_STATE)[0m
+[0;31mE (28335) bme680: Could not set forced mode to start TPHG measurement cycle[0m
+Valor LDR: 0
+LDR Bruto: 0 | Digito: 0
+Temp: 2.14 ºC | Hum: 0.00 % | Pres: 1.94 hPa | Gas: 0.00 Ohm
+[0;33mW (28345) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (28355) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (29365) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb6328, Speed: 1000000 Hz).[0m
+[0;31mE (29365) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (29365) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (29375) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (29375) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (29385) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (29395) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (29405) i2cdev: [0x76 at 0] I2C op failed (Try 0, Handle 0x3ffb6328): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (29415) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (29425) i2cdev: [0x76 at 0] Removing potentially corrupted device handle 0x3ffb6328 after permanent error[0m
+[0;33mW (29475) i2cdev: [0x76 at 0] Retrying operation...[0m
+[0;32mI (29475) i2cdev: [0x76 at 0] Device added successfully (Device Handle: 0x3ffb6328, Speed: 1000000 Hz).[0m
+[0;31mE (29475) i2c.master: I2C hardware NACK detected[0m
+[0;31mE (29485) i2c.master: I2C transaction unexpected nack detected[0m
+[0;31mE (29485) i2c.master: s_i2c_synchronous_transaction(872): I2C transaction failed[0m
+[0;32mI (29495) gpio: GPIO[21]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (29505) gpio: GPIO[22]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (29515) i2c.master: i2c_master_transmit_receive(1097): I2C transaction failed[0m
+[0;33mW (29525) i2cdev: [0x76 at 0] I2C op failed (Try 1, Handle 0x3ffb6328): 259 (ESP_ERR_INVALID_STATE).[0m
+[0;33mW (29535) i2cdev: [0x76 at 0] Invalid state error - handle may need recreation[0m
+[0;33mW (29535) i2cdev: [0x76 at 0] Removing potentially co

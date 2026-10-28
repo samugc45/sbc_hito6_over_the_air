@@ -87,7 +87,7 @@ void app_main(void)
         bool conectado = arrancar_wifi_sta(ssid, password); 
 
         if (conectado) {
-            ESP_LOGI(TAG, "WiFi updated5 conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
+            ESP_LOGI(TAG, "WiFi actualizado conectado con éxito. Arrancando Bluetooth Y Comprobando Actualizaciones");
             esp_ota_mark_app_valid_cancel_rollback();
             iniciar_sntp();
 
@@ -95,7 +95,7 @@ void app_main(void)
 
             xTaskCreate(tarea_ota_programada, "ota_programada", 4096, NULL, 5, NULL);
 
-            //arrancar_bluetooth();
+            arrancar_bluetooth();
             programa_main();
 
         } else {
